@@ -1,0 +1,178 @@
+{
+  "name": "title_cs",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "51:9",
+    "version": "4341842341",
+    "component-id": "f8cc4dd5ce2366b7fd14d7f63ad41afb95c72417"
+  },
+  "default": "TitleCS",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 39"
+      },
+      {
+        "type": "text",
+        "id": "titu"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6"
+      },
+      {
+        "type": "group",
+        "id": "cc"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "TitleCS": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Group 39",
+              "titu"
+            ],
+            "item-spacing": "30.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 39",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "42.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 6",
+              "cc"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "titu",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Catálogo de servicios",
+            "overflow": "visible",
+            "text-size": "25.0",
+            "line-height": "1.1080000305175781",
+            "typeface": "Podkova"
+          },
+          {
+            "id": "Rectangle 6",
+            "border-radius": "15.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-19.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-21.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_6.svg"
+          },
+          {
+            "id": "cc",
+            "margin": {
+              "left": "9.0",
+              "top": "6.0",
+              "right": "10.95916748046875",
+              "bottom": "5.58697509765625"
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.41302490234375"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "TitleCS",
+      "size": {
+        "width": 320.0,
+        "height": 41.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

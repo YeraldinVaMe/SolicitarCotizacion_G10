@@ -1,0 +1,53 @@
+{
+  "name": "title_menu_p",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "2:107",
+    "version": "4341660971",
+    "component-id": "add1ace739618c67fc5564170b8fac3c6e680043"
+  },
+  "default": "titleMenuP",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "titleMenuP": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "170.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "49.0"
+              }
+            },
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "titleMenuP",
+      "size": {
+        "width": 170.0,
+        "height": 49.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

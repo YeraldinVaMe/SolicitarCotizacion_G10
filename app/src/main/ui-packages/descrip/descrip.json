@@ -1,0 +1,85 @@
+{
+  "name": "descrip",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "51:10",
+    "version": "4343433533",
+    "component-id": "f40b8dd00f42b8274598b3e81a9b282302718df6"
+  },
+  "default": "Descrip",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "sal"
+      }
+    ],
+    "modes": {
+      "Descrip": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "sal"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "sal",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "En Condosa contamos con viviendas con una o más de los siguientes servicios u áreas:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Descrip",
+      "size": {
+        "width": 308.0,
+        "height": 69.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

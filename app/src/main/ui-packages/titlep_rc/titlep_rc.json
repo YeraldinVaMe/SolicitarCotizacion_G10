@@ -1,0 +1,189 @@
+{
+  "name": "titlep_rc",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "51:24",
+    "version": "4341700622",
+    "component-id": "2660c1d38b9764b26e67dd02e09bc6d45e488957"
+  },
+  "default": "TitlepRC",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 39"
+      },
+      {
+        "type": "text",
+        "id": "Registrar cliente"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6"
+      },
+      {
+        "type": "group",
+        "id": "c1"
+      },
+      {
+        "type": "vector",
+        "id": "imagen"
+      }
+    ],
+    "modes": {
+      "TitlepRC": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Group 39",
+              "Registrar cliente"
+            ],
+            "item-spacing": "34.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 39",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "42.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 6",
+              "c1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Registrar cliente",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "256.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "0.8470588235294118",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Registrar cliente",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "25.0",
+            "line-height": "1.1080000305175781",
+            "typeface": "Podkova"
+          },
+          {
+            "id": "Rectangle 6",
+            "border-radius": "15.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-25.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-21.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_6.svg"
+          },
+          {
+            "id": "c1",
+            "margin": {
+              "left": "9.0",
+              "top": "6.0",
+              "right": "10.95916748046875",
+              "bottom": "5.58697509765625"
+            },
+            "is-structured": "false",
+            "children": [
+              "imagen"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "imagen",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "imagen.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "TitlepRC",
+      "size": {
+        "width": 332.0,
+        "height": 41.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,661 @@
+{
+  "name": "card_aux_rc",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "89:67",
+    "version": "4342681595",
+    "component-id": "dc946da5ad961fb5c6d85c3146fd207123fc331c"
+  },
+  "default": "CardAuxRC",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Tipo de documento"
+      },
+      {
+        "type": "group",
+        "id": "despleDoc"
+      },
+      {
+        "type": "text",
+        "id": "Número de documento"
+      },
+      {
+        "type": "group",
+        "id": "r1"
+      },
+      {
+        "type": "text",
+        "id": "Nombres"
+      },
+      {
+        "type": "group",
+        "id": "r2"
+      },
+      {
+        "type": "text",
+        "id": "Apellidos"
+      },
+      {
+        "type": "group",
+        "id": "r3"
+      },
+      {
+        "type": "text",
+        "id": "Fecha de nacimiento"
+      },
+      {
+        "type": "group",
+        "id": "r4"
+      },
+      {
+        "type": "text",
+        "id": "Código postal"
+      },
+      {
+        "type": "group",
+        "id": "despleCodPostal"
+      },
+      {
+        "type": "text",
+        "id": "Dirección"
+      },
+      {
+        "type": "group",
+        "id": "r5"
+      },
+      {
+        "type": "text",
+        "id": "Correo"
+      },
+      {
+        "type": "group",
+        "id": "r6"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 46"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 47"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 48"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 49"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 50"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 51"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 52"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 53"
+      }
+    ],
+    "modes": {
+      "CardAuxRC": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "16.0",
+              "top": "17.0",
+              "right": "16.0",
+              "bottom": "17.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Tipo de documento",
+              "despleDoc",
+              "Número de documento",
+              "r1",
+              "Nombres",
+              "r2",
+              "Apellidos",
+              "r3",
+              "Fecha de nacimiento",
+              "r4",
+              "Código postal",
+              "despleCodPostal",
+              "Dirección",
+              "r5",
+              "Correo",
+              "r6"
+            ],
+            "item-spacing": "12.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Tipo de documento",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "166.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Tipo de documento",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "despleDoc",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 46"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Número de documento",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Número de documento",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 47"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Nombres",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Nombres",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 48"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Apellidos",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Apellidos",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 49"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Fecha de nacimiento",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Fecha de nacimiento",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 50"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Código postal",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Código postal",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "despleCodPostal",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 51"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Dirección",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Dirección",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 52"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Correo",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "188.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Correo",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "r6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 53"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 46",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_46.svg"
+          },
+          {
+            "id": "Rectangle 47",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_47.svg"
+          },
+          {
+            "id": "Rectangle 48",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_48.svg"
+          },
+          {
+            "id": "Rectangle 49",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_49.svg"
+          },
+          {
+            "id": "Rectangle 50",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_50.svg"
+          },
+          {
+            "id": "Rectangle 51",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_51.svg"
+          },
+          {
+            "id": "Rectangle 52",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_52.svg"
+          },
+          {
+            "id": "Rectangle 53",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_53.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "CardAuxRC",
+      "size": {
+        "width": 339.0,
+        "height": 731.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,146 @@
+{
+  "name": "btn_solicitar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "53:50",
+    "version": "4341781580",
+    "component-id": "4fbb7508ebdfda4ced43343d65a81adfcf2a2f51"
+  },
+  "default": "BtnSolicitar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 80"
+      },
+      {
+        "type": "text",
+        "id": "scc"
+      },
+      {
+        "type": "image",
+        "id": "cotizacion 1"
+      }
+    ],
+    "modes": {
+      "BtnSolicitar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onBtnSolicitartapped",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 80",
+              "scc",
+              "cotizacion 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 80",
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_80.svg"
+          },
+          {
+            "id": "scc",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "17.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "106.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "127.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Solicitar cotización",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "cotizacion 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "44.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "24.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "72.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "67.6363525390625"
+              }
+            },
+            "image-content": "cotizacion_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnSolicitartapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "BtnSolicitar",
+      "size": {
+        "width": 161.0,
+        "height": 165.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

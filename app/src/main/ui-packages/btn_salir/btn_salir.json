@@ -1,0 +1,106 @@
+{
+  "name": "btn_salir",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "53:46",
+    "version": "4341781580",
+    "component-id": "0a2bcc317ad33af8df89c67bfa6ffebc24bdc25f"
+  },
+  "default": "BtnSalir",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Cerrar sesión"
+      }
+    ],
+    "modes": {
+      "BtnSalir": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "18.0",
+              "top": "10.0",
+              "right": "18.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "40.0",
+            "tap-handler": "$onBtnSalirtapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Cerrar sesión"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Cerrar sesión",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "92.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Cerrar sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnSalirtapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "BtnSalir",
+      "size": {
+        "width": 128.0,
+        "height": 74.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

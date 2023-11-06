@@ -1,0 +1,284 @@
+{
+  "name": "box_adm_general",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "5:199",
+    "version": "4359450720",
+    "component-id": "a6bb0d493e13db7b46501b6fef36c2f25f498588"
+  },
+  "default": "boxAdmGeneral",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "group",
+        "id": "btn_selectAdm"
+      },
+      {
+        "type": "image",
+        "id": "image 2"
+      },
+      {
+        "type": "text",
+        "id": "Administración general"
+      },
+      {
+        "type": "text",
+        "id": "Nos ocupamos del cuidado integral de tu hogar"
+      },
+      {
+        "type": "vector",
+        "id": "fondo"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 2"
+      },
+      {
+        "type": "text",
+        "id": "Seleccionar"
+      }
+    ],
+    "modes": {
+      "boxAdmGeneral": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "top_level_synth",
+              "btn_selectAdm",
+              "image 2",
+              "Administración general",
+              "Nos ocupamos del cuidado integral de tu hogar"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "fondo"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "btn_selectAdm",
+            "margin": {
+              "left": "178.0",
+              "top": "111.0",
+              "right": "50.0",
+              "bottom": "16.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnSeleccionar",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 2",
+              "Seleccionar"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "image 2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "31.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "47.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "image-content": "image_2.png",
+            "scale": "contain"
+          },
+          {
+            "id": "Administración general",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "48.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "16.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "259.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Administración general",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Nos ocupamos del cuidado integral de tu hogar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "158.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "37.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "166.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Nos ocupamos del cuidado integral de tu hogar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "fondo",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "355.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "163.0"
+              }
+            },
+            "vector-content": "fondo.svg"
+          },
+          {
+            "id": "Rectangle 2",
+            "border-radius": "30.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "127.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "vector-content": "rectangle_2.svg"
+          },
+          {
+            "id": "Seleccionar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "17.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "101.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Seleccionar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnSeleccionar": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "boxAdmGeneral",
+      "size": {
+        "width": 355.0,
+        "height": 163.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

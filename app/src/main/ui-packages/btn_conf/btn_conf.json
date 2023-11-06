@@ -1,0 +1,94 @@
+{
+  "name": "btn_conf",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "89:84",
+    "version": "4343433533",
+    "component-id": "c326aa7c5b21f54ab0b4413d66994c22d3347c94"
+  },
+  "default": "BtnConf",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Confirmar"
+      }
+    ],
+    "modes": {
+      "BtnConf": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "6.0",
+              "right": "13.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnConfirm",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Confirmar"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Confirmar",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Confirmar",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnConfirm": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "BtnConf",
+      "size": {
+        "width": 112.0,
+        "height": 36.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
