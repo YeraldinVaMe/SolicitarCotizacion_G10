@@ -76,4 +76,7 @@ dependencies {
     implementation ("com.maxkeppeler.sheets-compose-dialogs:calendar:1.0.2")
     // CLOCK
     implementation ("com.maxkeppeler.sheets-compose-dialogs:clock:1.0.2")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") //consumo de api
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") //Convierte un JSON  a una Data Class
 }
