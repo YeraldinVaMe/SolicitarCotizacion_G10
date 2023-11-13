@@ -1,0 +1,881 @@
+{
+  "name": "card_principal_info_prediov_aux",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "41:375",
+    "version": "4531371813",
+    "component-id": "1bf8e2efefea8331eb223594e552834eac29f502"
+  },
+  "default": "CardPrincipalInfoPrediovAux",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Información del predio:"
+      },
+      {
+        "type": "group",
+        "id": "SubCardInforPredio"
+      },
+      {
+        "type": "text",
+        "id": "Nombre del predio:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorNombrePredio"
+      },
+      {
+        "type": "text",
+        "id": "RUC:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorRUC"
+      },
+      {
+        "type": "text",
+        "id": "TIpo:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorTipo"
+      },
+      {
+        "type": "text",
+        "id": "Código postal:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorCodPostal"
+      },
+      {
+        "type": "text",
+        "id": "Número de contacto:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorNumContacto"
+      },
+      {
+        "type": "text",
+        "id": "Correo electrónico:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorCorreo"
+      },
+      {
+        "type": "text",
+        "id": "Dirección:"
+      },
+      {
+        "type": "group",
+        "id": "CotenedorDireccion"
+      },
+      {
+        "type": "group",
+        "id": "Btn_Siguiente"
+      },
+      {
+        "type": "group",
+        "id": "Btn_VolverAux"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorNombrePredio"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorRUC"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorTipo"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorCodPostal"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorNumContacto"
+      },
+      {
+        "type": "text",
+        "id": "inputContenedorCorreo"
+      },
+      {
+        "type": "text",
+        "id": "inputCotenedorDireccion"
+      },
+      {
+        "type": "text",
+        "id": "Siguiente"
+      },
+      {
+        "type": "text",
+        "id": "Volver"
+      }
+    ],
+    "modes": {
+      "CardPrincipalInfoPrediovAux": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": "15.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Información del predio:",
+              "SubCardInforPredio"
+            ],
+            "item-spacing": "6.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Información del predio:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "179.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Información del predio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "SubCardInforPredio",
+            "padding": {
+              "left": "10.0",
+              "top": "19.0",
+              "right": "10.0",
+              "bottom": "19.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Nombre del predio:",
+              "ContenedorNombrePredio",
+              "RUC:",
+              "ContenedorRUC",
+              "TIpo:",
+              "ContenedorTipo",
+              "Código postal:",
+              "ContenedorCodPostal",
+              "Número de contacto:",
+              "ContenedorNumContacto",
+              "Correo electrónico:",
+              "ContenedorCorreo",
+              "Dirección:",
+              "CotenedorDireccion",
+              "Btn_Siguiente",
+              "Btn_VolverAux"
+            ],
+            "item-spacing": "8.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Nombre del predio:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Nombre del predio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorNombrePredio",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorNombrePredio"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "RUC:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "61.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "RUC:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorRUC",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorRUC"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "TIpo:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "66.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "TIpo:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorTipo",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorTipo"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Código postal:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "136.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Código postal:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorCodPostal",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorCodPostal"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Número de contacto:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "183.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Número de contacto:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorNumContacto",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorNumContacto"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Correo electrónico:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Correo electrónico:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorCorreo",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputContenedorCorreo"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Dirección:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "97.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Dirección:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "CotenedorDireccion",
+            "padding": {
+              "left": "2.0",
+              "top": "8.0",
+              "right": "2.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputCotenedorDireccion"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Btn_Siguiente",
+            "padding": {
+              "left": "51.0",
+              "top": "6.0",
+              "right": "51.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtn_Siguiente",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Siguiente"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "115.42372881355932",
+              "saturation": "0.686046511627907",
+              "value": "0.6745098039215687"
+            }
+          },
+          {
+            "id": "Btn_VolverAux",
+            "padding": {
+              "left": "99.0",
+              "top": "6.0",
+              "right": "99.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtn_VolverAux",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Volver"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "0.0",
+              "saturation": "0.7710843373493976",
+              "value": "0.9764705882352941"
+            }
+          },
+          {
+            "id": "inputContenedorNombrePredio",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorNombrePrediotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputContenedorRUC",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorRUCtext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputContenedorTipo",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorTipotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputContenedorCodPostal",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorCodPostaltext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputContenedorNumContacto",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorNumContactotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputContenedorCorreo",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputContenedorCorreotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "inputCotenedorDireccion",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputCotenedorDirecciontext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Siguiente",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Siguiente",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Volver",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Volver",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtn_Siguiente": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtn_VolverAux": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorNombrePrediotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorRUCtext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorTipotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorCodPostaltext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorNumContactotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputContenedorCorreotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputCotenedorDirecciontext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardPrincipalInfoPrediovAux",
+      "size": {
+        "width": 357.0,
+        "height": 723.0
+      },
+      "parameters": {
+        "inputContenedorNombrePrediotext": "xx1",
+        "inputContenedorRUCtext": "xx2",
+        "inputContenedorTipotext": "xx3",
+        "inputContenedorCodPostaltext": "xx4",
+        "inputContenedorNumContactotext": "xx5",
+        "inputContenedorCorreotext": "xx6",
+        "inputCotenedorDirecciontext": "xx7"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

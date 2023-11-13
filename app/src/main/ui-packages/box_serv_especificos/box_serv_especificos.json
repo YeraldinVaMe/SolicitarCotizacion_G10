@@ -1,0 +1,810 @@
+{
+  "name": "box_serv_especificos",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "5:230",
+    "version": "4360223452",
+    "component-id": "930dba9e8335a4e61ea76801351f36eb15f609ab"
+  },
+  "default": "box_serv_especificos",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "group",
+        "id": "s_seguridad"
+      },
+      {
+        "type": "group",
+        "id": "s_limpieza"
+      },
+      {
+        "type": "group",
+        "id": "s_jardineria"
+      },
+      {
+        "type": "group",
+        "id": "s_area_comun"
+      },
+      {
+        "type": "group",
+        "id": "btn_Solicitar"
+      },
+      {
+        "type": "vector",
+        "id": "fondo"
+      },
+      {
+        "type": "vector",
+        "id": "rectan1"
+      },
+      {
+        "type": "vector",
+        "id": "checkBoxGuardias"
+      },
+      {
+        "type": "image",
+        "id": "image 3"
+      },
+      {
+        "type": "text",
+        "id": "Guardias de seguridad 24/7"
+      },
+      {
+        "type": "vector",
+        "id": "rectan2"
+      },
+      {
+        "type": "vector",
+        "id": "checkBoxLimpieza"
+      },
+      {
+        "type": "text",
+        "id": "Servicio de limpieza"
+      },
+      {
+        "type": "image",
+        "id": "image 4"
+      },
+      {
+        "type": "vector",
+        "id": "rectan3"
+      },
+      {
+        "type": "vector",
+        "id": "checkBoxJardineria"
+      },
+      {
+        "type": "text",
+        "id": "Servicio de jardinería"
+      },
+      {
+        "type": "image",
+        "id": "image 5"
+      },
+      {
+        "type": "vector",
+        "id": "rectan4"
+      },
+      {
+        "type": "vector",
+        "id": "checkBoxAreas"
+      },
+      {
+        "type": "text",
+        "id": "Áreas comunes"
+      },
+      {
+        "type": "image",
+        "id": "image 6"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 2"
+      },
+      {
+        "type": "text",
+        "id": "Solicitar cotización"
+      }
+    ],
+    "modes": {
+      "box_serv_especificos": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "top_level_synth",
+              "s_seguridad",
+              "s_limpieza",
+              "s_jardineria",
+              "s_area_comun",
+              "btn_Solicitar"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "fondo"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "s_seguridad",
+            "margin": {
+              "left": "28.0",
+              "top": "25.0",
+              "right": "187.0",
+              "bottom": "265.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "rectan1",
+              "checkBoxGuardias",
+              "image 3",
+              "Guardias de seguridad 24/7"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "s_limpieza",
+            "margin": {
+              "left": "186.0",
+              "top": "25.0",
+              "right": "29.0",
+              "bottom": "265.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "rectan2",
+              "checkBoxLimpieza",
+              "Servicio de limpieza",
+              "image 4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "s_jardineria",
+            "margin": {
+              "left": "28.0",
+              "top": "181.0",
+              "right": "187.0",
+              "bottom": "109.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "rectan3",
+              "checkBoxJardineria",
+              "Servicio de jardinería",
+              "image 5"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "s_area_comun",
+            "margin": {
+              "left": "186.0",
+              "top": "181.0",
+              "right": "29.0",
+              "bottom": "109.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "rectan4",
+              "checkBoxAreas",
+              "Áreas comunes",
+              "image 6"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "btn_Solicitar",
+            "margin": {
+              "left": "78.0",
+              "top": "358.0",
+              "right": "77.0",
+              "bottom": "34.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onbtn_Solicitar",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 2",
+              "Solicitar cotización"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "fondo",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "355.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "428.0"
+              }
+            },
+            "vector-content": "fondo.svg"
+          },
+          {
+            "id": "rectan1",
+            "border-radius": "8.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "140.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "138.0"
+              }
+            },
+            "vector-content": "rectan1.svg"
+          },
+          {
+            "id": "checkBoxGuardias",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "56.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.023681640625"
+              }
+            },
+            "tap-handler": "$oncheckBoxGuardias",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.1185302734375"
+              }
+            },
+            "vector-content": "check_box_guardias.svg"
+          },
+          {
+            "id": "image 3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "41.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "84.4976806640625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.242919921875"
+              }
+            },
+            "image-content": "image_3.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Guardias de seguridad 24/7",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "36.21331787109375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.17181396484375"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Guardias de seguridad 24/7",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "rectan2",
+            "border-radius": "8.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "140.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "138.0"
+              }
+            },
+            "vector-content": "rectan2.svg"
+          },
+          {
+            "id": "checkBoxLimpieza",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "56.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.023681640625"
+              }
+            },
+            "tap-handler": "$oncheckBoxLimpieza",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.1185302734375"
+              }
+            },
+            "vector-content": "check_box_limpieza.svg"
+          },
+          {
+            "id": "Servicio de limpieza",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "36.21331787109375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.17181396484375"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio de limpieza",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "image 4",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "37.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "80.4739990234375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "45.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "45.266632080078125"
+              }
+            },
+            "image-content": "image_4.png",
+            "scale": "cover"
+          },
+          {
+            "id": "rectan3",
+            "border-radius": "8.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "140.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "138.0"
+              }
+            },
+            "vector-content": "rectan3.svg"
+          },
+          {
+            "id": "checkBoxJardineria",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "56.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.023712158203125"
+              }
+            },
+            "tap-handler": "$oncheckBoxJardineria",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.118499755859375"
+              }
+            },
+            "vector-content": "check_box_jardineria.svg"
+          },
+          {
+            "id": "Servicio de jardinería",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "36.213287353515625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.17181396484375"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio de jardinería",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "image 5",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "39.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "80.4739990234375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "45.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "45.266632080078125"
+              }
+            },
+            "image-content": "image_5.png",
+            "scale": "cover"
+          },
+          {
+            "id": "rectan4",
+            "border-radius": "8.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "140.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "138.0"
+              }
+            },
+            "vector-content": "rectan4.svg"
+          },
+          {
+            "id": "checkBoxAreas",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "56.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.023712158203125"
+              }
+            },
+            "tap-handler": "$oncheckBoxAreas",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.118499755859375"
+              }
+            },
+            "vector-content": "check_box_areas.svg"
+          },
+          {
+            "id": "Áreas comunes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "46.272552490234375"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.053314208984375"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Áreas comunes",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "image 6",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "38.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "79.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "image-content": "image_6.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 2",
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "200.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "vector-content": "rectangle_2.svg"
+          },
+          {
+            "id": "Solicitar cotización",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "167.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Solicitar cotización",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onbtn_Solicitar": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oncheckBoxGuardias": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oncheckBoxLimpieza": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oncheckBoxJardineria": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oncheckBoxAreas": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "box_serv_especificos",
+      "size": {
+        "width": 355.0,
+        "height": 428.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,174 @@
+{
+  "name": "title_princv3",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "41:269",
+    "version": "4531738540",
+    "component-id": "a96437ec82b71b18d383a391806451f0aa919977"
+  },
+  "default": "TitlePrincv3",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "¡Solicitud realizada con éxito!"
+      },
+      {
+        "type": "group",
+        "id": "Backv3"
+      },
+      {
+        "type": "group",
+        "id": "🦆 icon \"chevron left\""
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "TitlePrincv3": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "¡Solicitud realizada con éxito!",
+              "Backv3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "¡Solicitud realizada con éxito!",
+            "margin": {
+              "left": "70.040771484375",
+              "top": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "¡Solicitud realizada con éxito!",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "25.0",
+            "line-height": "1.1080000305175781",
+            "typeface": "Podkova"
+          },
+          {
+            "id": "Backv3",
+            "padding": {
+              "left": "9.0",
+              "top": "6.0",
+              "right": "9.0",
+              "bottom": "6.0"
+            },
+            "margin": {
+              "right": "273.99993896484375",
+              "bottom": "17.586944580078125"
+            },
+            "border-radius": "15.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onBackv3",
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "🦆 icon \"chevron left\""
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.42857142857144",
+              "saturation": "0.37837837837837845",
+              "value": "0.2901960784313726"
+            }
+          },
+          {
+            "id": "🦆 icon \"chevron left\"",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.413055419921875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.413055419921875"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBackv3": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "TitlePrincv3",
+      "size": {
+        "width": 314.040771484375,
+        "height": 59.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
