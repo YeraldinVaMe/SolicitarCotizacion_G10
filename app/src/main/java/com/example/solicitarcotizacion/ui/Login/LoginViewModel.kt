@@ -10,14 +10,9 @@ class LoginViewModel : ViewModel(){
     fun onCorreoChange(correo: String){
         _correo.value = correo
     }
-
     private val _pass = MutableLiveData<String>()
     val pass : LiveData<String> = _pass
     fun onPassChange(pass: String){
         _pass.value = pass
     }
-
-    private val _list = MutableLiveData<List<String>>()
-    val list : LiveData<List<String>> = _list
-
 }

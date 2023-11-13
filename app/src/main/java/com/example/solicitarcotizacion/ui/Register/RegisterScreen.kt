@@ -34,6 +34,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -74,7 +75,7 @@ import com.maxkeppeler.sheets.calendar.models.CalendarConfig
 import com.maxkeppeler.sheets.calendar.models.CalendarSelection
 
 @Composable
-fun Register(navController: NavController){
+fun Register(navController: NavController,viewModel: RegisterViewModel){
     val image = painterResource(R.drawable.fondoprincipal)
 
     Box {
@@ -99,7 +100,7 @@ fun Register(navController: NavController){
             }
 
             RelayContainer {
-                CardAuxRc(modifier = Modifier.columnWeight(1.0f),navController)
+                CardAuxRc(modifier = Modifier.columnWeight(1.0f),navController,viewModel = viewModel)
             }
         }
     }
@@ -107,14 +108,14 @@ fun Register(navController: NavController){
 
 @Preview(showBackground = false)
 @Composable
-fun cardAuxPrev(){
+fun CardAuxPrev(){
     SolicitarCotizacionTheme{
-        CardAuxRc(Modifier,rememberNavController())
+        CardAuxRc(Modifier,rememberNavController(), RegisterViewModel())
     }
 }
 
 @Composable
-fun CardAuxRc(modifier: Modifier = Modifier, navController: NavController) {
+fun CardAuxRc(modifier: Modifier = Modifier, navController: NavController, viewModel: RegisterViewModel) {
     TopLevel(modifier = modifier) {
         LazyColumn(
             contentPadding = PaddingValues(10.dp),
@@ -122,23 +123,23 @@ fun CardAuxRc(modifier: Modifier = Modifier, navController: NavController) {
         ) {
             item {
                 TipoDeDocumento()
-                tipoDoc()
+                tipoDoc(viewModel = viewModel)
             }
             item {
                 NMeroDeDocumento()
-                numDoc()
+                numDoc(viewModel = viewModel)
             }
             item {
                 Nombres()
-                nombresField()
+                nombresField(viewModel = viewModel)
             }
             item {
                 Apellidos()
-                apellidosField()
+                apellidosField(viewModel = viewModel)
             }
             item {
                 FechaDeNacimiento()
-                fechaNac()
+                fechaNac(viewModel = viewModel)
             }
             item {
                 CDigoPostal()
@@ -146,11 +147,11 @@ fun CardAuxRc(modifier: Modifier = Modifier, navController: NavController) {
             }
             item {
                 DirecciN()
-                direccionField()
+                direccionField(viewModel = viewModel)
             }
             item {
                 Correo()
-                correoField()
+                correoField(viewModel = viewModel)
             }
             item {
                 Row (
@@ -160,7 +161,7 @@ fun CardAuxRc(modifier: Modifier = Modifier, navController: NavController) {
                 ){
                     BtnConf(
                         onBtnConfirm = {navController.navigate(Screen.Login.route)},
-                        modifier = Modifier.padding(top = 20.dp)
+                        modifier = Modifier.padding(top = 20.dp),
                     )
                 }
             }
@@ -398,7 +399,7 @@ fun TopLevel(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun tipoDoc(){
+fun tipoDoc(viewModel: RegisterViewModel){
     var expanded by remember { mutableStateOf(false) }
     val items = listOf("DNI", "Carnet de extranjería")
     var selectedText by remember { mutableStateOf("")}
@@ -495,13 +496,11 @@ fun codigoPostal(){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numDoc (modifier: Modifier = Modifier){
-
-    var numDoc by remember { mutableStateOf("") }
-
+fun numDoc (modifier: Modifier = Modifier, viewModel: RegisterViewModel){
+    val numDoc: String by viewModel.numDoc.observeAsState(initial = "")
     TextField(
         value = numDoc,
-        onValueChange = { numDoc = it },
+        onValueChange = { viewModel.onNumDocChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -528,13 +527,12 @@ fun numDoc (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun nombresField (modifier: Modifier = Modifier){
+fun nombresField (modifier: Modifier = Modifier, viewModel: RegisterViewModel){
 
-    var nombres by remember { mutableStateOf("") }
-
+    val nombres: String by viewModel.nombres.observeAsState(initial = "")
     TextField(
         value = nombres,
-        onValueChange = { nombres = it },
+        onValueChange = { viewModel.onNombresChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -560,13 +558,12 @@ fun nombresField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun apellidosField (modifier: Modifier = Modifier){
+fun apellidosField (modifier: Modifier = Modifier, viewModel: RegisterViewModel){
 
-    var apellidos by remember { mutableStateOf("") }
-
+    val apellidos: String by viewModel.apellidos.observeAsState(initial = "")
     TextField(
         value = apellidos,
-        onValueChange = { apellidos = it },
+        onValueChange = { viewModel.onApellidosChange(it) },
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -592,13 +589,11 @@ fun apellidosField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun direccionField (modifier: Modifier = Modifier){
-
-    var direccion by remember { mutableStateOf("") }
-
+fun direccionField (modifier: Modifier = Modifier,viewModel: RegisterViewModel){
+    val direccion: String by viewModel.direccion.observeAsState(initial = "")
     TextField(
         value = direccion,
-        onValueChange = { direccion = it },
+        onValueChange = { viewModel.onDireccionChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -624,13 +619,12 @@ fun direccionField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun correoField (modifier: Modifier = Modifier){
+fun correoField (modifier: Modifier = Modifier, viewModel: RegisterViewModel){
 
-    var correo by remember { mutableStateOf("") }
-
+    val correo: String by viewModel.correo.observeAsState(initial = "")
     TextField(
         value = correo,
-        onValueChange = { correo = it },
+        onValueChange = { viewModel.onCorreoChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -656,8 +650,8 @@ fun correoField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable()
-fun fechaNac(modifier:Modifier = Modifier){
-    var selectedDate by remember { mutableStateOf("Seleccione una fecha")}
+fun fechaNac(modifier:Modifier = Modifier, viewModel: RegisterViewModel){
+    val fechaNacimiento by viewModel.fechaNacimiento.observeAsState("Seleccione una fecha")
     val calendarState = rememberSheetState()
     CalendarDialog(
         state = calendarState,
@@ -665,11 +659,10 @@ fun fechaNac(modifier:Modifier = Modifier){
             monthSelection = true,
             yearSelection = true
         ),
-        selection = CalendarSelection.Date{
-            date -> selectedDate = date.toString()
+        selection = CalendarSelection.Date { date ->
+            viewModel.onFechaNacimientoChange(date.toString())
         }
     )
-
     Button(
         onClick = { calendarState.show() },
         shape = RoundedCornerShape(5.dp),
@@ -677,10 +670,9 @@ fun fechaNac(modifier:Modifier = Modifier){
             .height(50.dp)
             .fillMaxWidth(),
         colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-    )
-    {
+    ) {
         Text(
-            text = selectedDate,
+            text = fechaNacimiento,
         )
     }
 }
@@ -689,6 +681,6 @@ fun fechaNac(modifier:Modifier = Modifier){
 @Composable
 fun RegisterPreview(){
     SolicitarCotizacionTheme{
-        Register(rememberNavController())
+        Register(rememberNavController(),RegisterViewModel())
     }
 }

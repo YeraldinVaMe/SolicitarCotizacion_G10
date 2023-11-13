@@ -11,6 +11,7 @@ import com.example.solicitarcotizacion.ui.Login.Login
 import com.example.solicitarcotizacion.ui.Login.LoginViewModel
 import com.example.solicitarcotizacion.ui.MenuPrincipal.MenuPrincipal
 import com.example.solicitarcotizacion.ui.Register.Register
+import com.example.solicitarcotizacion.ui.Register.RegisterViewModel
 import com.example.solicitarcotizacion.ui.Resumen.Resumen
 import com.example.solicitarcotizacion.ui.VerAreasComunes.VerAreasComunes
 import com.example.solicitarcotizacion.ui.VerPredio.VerPredio
@@ -24,7 +25,7 @@ fun Navigation(){
             Login(navController = navController, LoginViewModel())
         }
         composable(route = Screen.Register.route){
-            Register(navController = navController)
+            Register(navController = navController, RegisterViewModel())
         }
         composable(route = Screen.MenuPrincipal.route){
             MenuPrincipal(navController = navController)

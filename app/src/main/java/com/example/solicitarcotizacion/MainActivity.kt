@@ -14,6 +14,7 @@ import com.example.solicitarcotizacion.Navigation.Navigation
 import com.example.solicitarcotizacion.ui.AgregarAreasComunes.AgregarAreasComunes
 import com.example.solicitarcotizacion.ui.AgregarPredio.AgregarPredio
 import com.example.solicitarcotizacion.ui.Register.Register
+import com.example.solicitarcotizacion.ui.Register.RegisterViewModel
 import com.example.solicitarcotizacion.ui.Resumen.Resumen
 import com.example.solicitarcotizacion.ui.VerAreasComunes.VerAreasComunes
 import com.example.solicitarcotizacion.ui.VerPredio.VerPredio
@@ -41,6 +42,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun mainPreview(){
     SolicitarCotizacionTheme {
-        Register(rememberNavController())
+        Register(rememberNavController(), RegisterViewModel())
     }
 }
