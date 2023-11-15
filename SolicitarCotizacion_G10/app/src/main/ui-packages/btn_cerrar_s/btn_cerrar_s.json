@@ -1,0 +1,52 @@
+{
+  "name": "btn_cerrar_s",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "2:116",
+    "version": "4341660971",
+    "component-id": "673bec7be7a142476dc1ed3875b332b2e9bf68a2"
+  },
+  "default": "btnCerrarS",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "btnCerrarS": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onbtnCerrarS",
+            "is-structured": "false",
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onbtnCerrarS": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "btnCerrarS",
+      "size": {
+        "width": 128.0,
+        "height": 67.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

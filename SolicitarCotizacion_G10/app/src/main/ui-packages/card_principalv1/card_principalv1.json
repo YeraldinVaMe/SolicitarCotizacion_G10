@@ -1,0 +1,774 @@
+{
+  "name": "card_principalv1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "30:91",
+    "version": "4531883313",
+    "component-id": "449c29844e1f2d3fac5b0e7654c61b5076702e14"
+  },
+  "default": "CardPrincipalv1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "MsnBienvenida"
+      },
+      {
+        "type": "group",
+        "id": "CardInfoServicios"
+      },
+      {
+        "type": "text",
+        "id": "Ingrese los siguientes datos"
+      },
+      {
+        "type": "group",
+        "id": "CardPrincipalPredio"
+      },
+      {
+        "type": "group",
+        "id": "AdmGeneralv1"
+      },
+      {
+        "type": "group",
+        "id": "GuardiasSegv1"
+      },
+      {
+        "type": "group",
+        "id": "ServLimpiezav1"
+      },
+      {
+        "type": "group",
+        "id": "ServJardineriav1"
+      },
+      {
+        "type": "group",
+        "id": "BtnVolverSeleccionarv1"
+      },
+      {
+        "type": "text",
+        "id": "Administración general:"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 48"
+      },
+      {
+        "type": "text",
+        "id": "Guardias de seguridad:"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 78"
+      },
+      {
+        "type": "text",
+        "id": "Servicio de limpieza:"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 79"
+      },
+      {
+        "type": "text",
+        "id": "Servicio de Jardinería:"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 80"
+      },
+      {
+        "type": "text",
+        "id": "Volver a seleccionar"
+      },
+      {
+        "type": "text",
+        "id": "Predio:"
+      },
+      {
+        "type": "vector",
+        "id": "ContenedorEscribirPredio"
+      },
+      {
+        "type": "group",
+        "id": "BtnBuscarPredio"
+      },
+      {
+        "type": "text",
+        "id": "PreguntaPorPredio"
+      },
+      {
+        "type": "group",
+        "id": "BtnRegistrarPredio"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "text",
+        "id": "Buscar"
+      },
+      {
+        "type": "text",
+        "id": "Iniciar registro de predio"
+      }
+    ],
+    "modes": {
+      "CardPrincipalv1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "17.0",
+              "top": "20.0",
+              "right": "17.0",
+              "bottom": "20.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "MsnBienvenida",
+              "CardInfoServicios",
+              "Ingrese los siguientes datos",
+              "CardPrincipalPredio"
+            ],
+            "item-spacing": "11.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "MsnBienvenida",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "319.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "¡ Felicidades usted contará con el servicio de  “Administración general” !",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "CardInfoServicios",
+            "padding": {
+              "left": "15.0",
+              "top": "11.0",
+              "right": "15.0",
+              "bottom": "11.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "AdmGeneralv1",
+              "GuardiasSegv1",
+              "ServLimpiezav1",
+              "ServJardineriav1",
+              "BtnVolverSeleccionarv1"
+            ],
+            "item-spacing": "9.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Ingrese los siguientes datos",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "214.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Ingrese los siguientes datos",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "CardPrincipalPredio",
+            "padding": {
+              "left": "8.0",
+              "top": "12.0",
+              "right": "8.0",
+              "bottom": "12.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Predio:",
+              "ContenedorEscribirPredio",
+              "BtnBuscarPredio",
+              "PreguntaPorPredio",
+              "BtnRegistrarPredio"
+            ],
+            "item-spacing": "5.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "AdmGeneralv1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "288.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Administración general:",
+              "Rectangle 48"
+            ],
+            "item-spacing": "20.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "GuardiasSegv1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Guardias de seguridad:",
+              "Rectangle 78"
+            ],
+            "item-spacing": "23.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "ServLimpiezav1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Servicio de limpieza:",
+              "Rectangle 79"
+            ],
+            "item-spacing": "44.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "ServJardineriav1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Servicio de Jardinería:",
+              "Rectangle 80"
+            ],
+            "item-spacing": "36.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "BtnVolverSeleccionarv1",
+            "padding": {
+              "left": "16.0",
+              "top": "6.0",
+              "right": "16.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnVolverSeleccionarv1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "251.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Volver a seleccionar"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "0.0",
+              "saturation": "0.7710843373493976",
+              "value": "0.9764705882352941"
+            }
+          },
+          {
+            "id": "Administración general:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "186.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Administración general:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 48",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "83.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "rectangle_48.svg"
+          },
+          {
+            "id": "Guardias de seguridad:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "186.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Guardias de seguridad:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 78",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "84.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "rectangle_78.svg"
+          },
+          {
+            "id": "Servicio de limpieza:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "165.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio de limpieza:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 79",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "84.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "rectangle_79.svg"
+          },
+          {
+            "id": "Servicio de Jardinería:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "173.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio de Jardinería:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 80",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "85.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "rectangle_80.svg"
+          },
+          {
+            "id": "Volver a seleccionar",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Volver a seleccionar",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Predio:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "68.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Predio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorEscribirPredio",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "contenedor_escribir_predio.svg"
+          },
+          {
+            "id": "BtnBuscarPredio",
+            "padding": {
+              "left": "12.0",
+              "top": "5.0",
+              "right": "12.0",
+              "bottom": "5.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnBuscarPredio",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Vector",
+              "Buscar"
+            ],
+            "item-spacing": "4.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "PreguntaPorPredio",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "265.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "¿Tu predio no está registrado?",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "BtnRegistrarPredio",
+            "padding": {
+              "left": "19.0",
+              "top": "6.0",
+              "right": "19.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnRegistrarPredio",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Iniciar registro de predio"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.66668701171875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.360992431640625"
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Buscar",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "57.866668701171875"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Buscar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Iniciar registro de predio",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Iniciar registro de predio",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnVolverSeleccionarv1": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtnBuscarPredio": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtnRegistrarPredio": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardPrincipalv1",
+      "size": {
+        "width": 366.0,
+        "height": 591.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

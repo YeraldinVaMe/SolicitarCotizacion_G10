@@ -1,0 +1,139 @@
+{
+  "name": "grupo_nombrev1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "31:121",
+    "version": "4530836970",
+    "component-id": "53d8e467ce3b6cbadf819b68c9639283aeda9c31"
+  },
+  "default": "GrupoNombrev1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Nombres completos"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorNombre"
+      },
+      {
+        "type": "text",
+        "id": "InputNombre"
+      }
+    ],
+    "modes": {
+      "GrupoNombrev1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Nombres completos",
+              "ContenedorNombre"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Nombres completos",
+            "margin": {
+              "right": "205.0",
+              "bottom": "40.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Nombres completos",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorNombre",
+            "padding": {
+              "left": "10.0",
+              "top": "9.0",
+              "right": "10.0",
+              "bottom": "9.0"
+            },
+            "margin": {
+              "top": "27.0"
+            },
+            "border-radius": "10.0",
+            "arrangement": "row",
+            "children": [
+              "InputNombre"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "InputNombre",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$InputNombre",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.123046875",
+            "typeface": "Courier Prime"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "InputNombre": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "GrupoNombrev1",
+      "size": {
+        "width": 368.0,
+        "height": 63.0
+      },
+      "parameters": {
+        "InputNombre": "Adrian Ernesto Zavaleta Vega"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

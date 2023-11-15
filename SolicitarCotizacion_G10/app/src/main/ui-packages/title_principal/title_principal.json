@@ -1,0 +1,84 @@
+{
+  "name": "title_principal",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "2:38",
+    "version": "4360223452",
+    "component-id": "2da3d9aae2e94d3ffe81ea933ab130eb1144a480"
+  },
+  "default": "titlePrincipal",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Condosa"
+      }
+    ],
+    "modes": {
+      "titlePrincipal": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Condosa"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Condosa",
+            "color": {
+              "alpha": "0.8470588235294118",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "$textCondosa",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "96.0",
+            "line-height": "1.1080000400543213",
+            "typeface": "Podkova"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "textCondosa": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "titlePrincipal",
+      "size": {
+        "width": 359.0,
+        "height": 106.0
+      },
+      "parameters": {
+        "textCondosa": "Condosa"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
