@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -37,8 +39,16 @@ import com.google.relay.compose.RelayText
 import com.google.relay.compose.tappable
 
 @Composable
-fun VerPredio(navController: NavController){
+fun VerPredio(navController: NavController, viewModel: VerPredioViewModel){
     val image = painterResource(R.drawable.fondo2)
+
+    val NombrePrediotext : String = viewModel.getInputContenedorNombrePredio()
+    val RUCtext : String = viewModel.getInputContenedorRUCtext()
+    val Tipotext : String = viewModel.getInputContenedorTipotext()
+    val CodPostaltext : String = viewModel.getInputContenedorCodPostaltext()
+    val NumContactotext : String = viewModel.getInputContenedorNumContactotext()
+    val Correotext : String = viewModel.getInputContenedorCorreotext()
+    val Direcciontext : String = viewModel.getInputCotenedorDirecciontext()
 
     Box {
         Image(
@@ -67,13 +77,13 @@ fun VerPredio(navController: NavController){
                 CardPrincipalInfoPrediovAux(
                     onBtnSiguiente = {navController.navigate(Screen.VerAreasComunes.route)},
                     onBtnVolverAux = {navController.navigate(Screen.solicitarCotizacion.route)},
-                    inputContenedorNombrePrediotext = "xx1",
-                    inputContenedorRUCtext = "xx2",
-                    inputContenedorTipotext = "xx3",
-                    inputContenedorCodPostaltext = "xx4",
-                    inputContenedorNumContactotext = "xx5",
-                    inputContenedorCorreotext = "xx6",
-                    inputCotenedorDirecciontext = "xx7"
+                    inputContenedorNombrePrediotext = NombrePrediotext,
+                    inputContenedorRUCtext = RUCtext,
+                    inputContenedorTipotext = Tipotext,
+                    inputContenedorCodPostaltext = CodPostaltext,
+                    inputContenedorNumContactotext = NumContactotext,
+                    inputContenedorCorreotext = Correotext,
+                    inputCotenedorDirecciontext = Direcciontext,
                 )
             }
         }
@@ -84,7 +94,7 @@ fun VerPredio(navController: NavController){
 @Composable
 fun VerPredioView(){
     MaterialTheme {
-        VerPredio(rememberNavController())
+        VerPredio(rememberNavController(), VerPredioViewModel())
     }
 }
 
@@ -101,6 +111,7 @@ fun CardPrincipalInfoPrediovAux(
     inputCotenedorDirecciontext: String = "",
     onBtnSiguiente: () -> Unit = {},
     onBtnVolverAux: () -> Unit = {}
+
 ) {
     TopLevel(modifier = modifier) {
         LazyColumn(

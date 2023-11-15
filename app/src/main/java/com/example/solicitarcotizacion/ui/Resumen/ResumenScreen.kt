@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -45,8 +47,17 @@ import com.google.relay.compose.RelayText
 import com.google.relay.compose.tappable
 
 @Composable
-fun Resumen(navController: NavController){
+fun Resumen(navController: NavController, viewModel: ResumenViewModel){
     val image = painterResource(R.drawable.fondo2)
+
+    val inputSolicitudtext : String = viewModel.getInputSolicitudtext()
+    val inputNombreSolicitantetext : String = viewModel.getInputNombreSolicitantetext()
+    val inputFechatext : String = viewModel.getInputFechatext()
+    val inputNombrePrediotext : String = viewModel.getInputNombrePrediotext()
+    val inputAreaPrediotext : String = viewModel.getInputAreaPrediotext()
+    val inputNumeroCasastext : String = viewModel.getInputNumeroCasastext()
+    val inputAreasComunestext : String = viewModel.getInputAreasComunestext()
+    val inputServicioSolicitadotext : String = viewModel.getInputServicioSolicitadotext()
 
     Box {
         Image(
@@ -69,14 +80,14 @@ fun Resumen(navController: NavController){
             }
             RelayContainer {
                 CardPrincipalv3(
-                    inputSolicitudtext = "89",
-                    inputNombreSolicitantetext = "Ricardo Manuel Torres Velasquez",
-                    inputFechatext = "2023-09-20 ",
-                    inputNombrePrediotext = "Las Gaviotas",
-                    inputAreaPrediotext = "1000 m²",
-                    inputNumeroCasastext = "20",
-                    inputAreasComunestext = "380.4 m² total (4)",
-                    inputServicioSolicitadotext = "Administracion (1), Seguridad(2), Limpieza (2), Jardineria(3)",
+                    inputSolicitudtext = inputSolicitudtext,
+                    inputNombreSolicitantetext = inputNombreSolicitantetext,
+                    inputFechatext = inputFechatext,
+                    inputNombrePrediotext = inputNombrePrediotext,
+                    inputAreaPrediotext = inputAreaPrediotext,
+                    inputNumeroCasastext = inputNumeroCasastext,
+                    inputAreasComunestext = inputAreasComunestext,
+                    inputServicioSolicitadotext = inputServicioSolicitadotext,
                     onBtnEnviarCorreo = {},
                     onBtnMenuPrincipal = {navController.navigate(Screen.CatalogoServicios.route)}
                 )
@@ -89,7 +100,7 @@ fun Resumen(navController: NavController){
 @Composable
 fun ResumenView(){
     MaterialTheme {
-        Resumen(rememberNavController())
+        Resumen(rememberNavController(), ResumenViewModel())
     }
 }
 

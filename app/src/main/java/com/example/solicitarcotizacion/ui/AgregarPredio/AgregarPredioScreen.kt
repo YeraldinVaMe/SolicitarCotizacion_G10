@@ -30,6 +30,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -58,6 +59,7 @@ import com.example.solicitarcotizacion.R
 import com.example.solicitarcotizacion.cardregistropredio.poppins
 import com.example.solicitarcotizacion.titulo12principal.Titulo12principal
 import com.example.solicitarcotizacion.tituloprincv1.TituloPrincv1
+import com.example.solicitarcotizacion.ui.Register.RegisterViewModel
 import com.google.relay.compose.CrossAxisAlignment
 import com.google.relay.compose.MainAxisAlignment
 import com.google.relay.compose.RelayContainer
@@ -68,7 +70,7 @@ import com.google.relay.compose.RelayVector
 import com.google.relay.compose.tappable
 
 @Composable
-fun AgregarPredioS(navController: NavController){
+fun AgregarPredioS(navController: NavController, viewModel: AgregarPredioViewModel ){
     val image = painterResource(R.drawable.fondo2)
 
     Box {
@@ -101,7 +103,8 @@ fun AgregarPredioS(navController: NavController){
             ) {
                 CardRegistroPredio(
                     onBtnAgregarPredio = {navController.navigate(Screen.AgregarAreasComunes.route)},
-                    onBtnVolver = {navController.navigate(Screen.solicitarCotizacion.route)}
+                    onBtnVolver = {navController.navigate(Screen.solicitarCotizacion.route)},
+                    viewModel = viewModel
                 )
             }
         }
@@ -112,7 +115,7 @@ fun AgregarPredioS(navController: NavController){
 @Composable
 fun AgregarPredioView(){
     MaterialTheme {
-        AgregarPredioS(rememberNavController())
+        AgregarPredioS(rememberNavController(),AgregarPredioViewModel())
     }
 }
 
@@ -121,7 +124,8 @@ fun AgregarPredioView(){
 fun CardRegistroPredio(
     modifier: Modifier = Modifier,
     onBtnAgregarPredio: () -> Unit = {},
-    onBtnVolver: () -> Unit = {}
+    onBtnVolver: () -> Unit = {},
+    viewModel: AgregarPredioViewModel
 ) {
     TopLevel(modifier = modifier) {
         InformaciNDelPredio()
@@ -130,11 +134,11 @@ fun CardRegistroPredio(
                 verticalArrangement = Arrangement.spacedBy(15.dp)){
                 item {
                     NombreDelPredio()
-                    nombresField()
+                    nombresField(viewModel = viewModel)
                 }
                 item {
                     RUC()
-                    numRUC()
+                    numRUC(viewModel = viewModel)
                 }
                 item {
                     Tipo()
@@ -146,15 +150,15 @@ fun CardRegistroPredio(
                 }
                 item {
                     NMeroDeContacto()
-                    numContacto()
+                    numContacto(viewModel = viewModel)
                 }
                 item {
                     CorreoElectrNico()
-                    correoField()
+                    correoField(viewModel = viewModel)
                 }
                 item {
                     DirecciN()
-                    direccionField()
+                    direccionField(viewModel = viewModel)
                 }
                 item {
                     Spacer(modifier = Modifier.padding(top = 15.dp))
@@ -205,13 +209,12 @@ fun CardRegistroPredio(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun nombresField (modifier: Modifier = Modifier){
+fun nombresField (modifier: Modifier = Modifier, viewModel: AgregarPredioViewModel){
 
-    var nombres by remember { mutableStateOf("") }
-
+    val nombres: String by viewModel.nombres.observeAsState(initial = "")
     TextField(
         value = nombres,
-        onValueChange = { nombres = it },
+        onValueChange = { viewModel.onNombresChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -237,13 +240,12 @@ fun nombresField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numRUC (modifier: Modifier = Modifier){
+fun numRUC (modifier: Modifier = Modifier, viewModel: AgregarPredioViewModel){
 
-    var numRUC by remember { mutableStateOf("") }
-
+    val numRUC: String by viewModel.numRUC.observeAsState(initial = "")
     TextField(
         value = numRUC,
-        onValueChange = { numRUC = it },
+        onValueChange = { viewModel.onNumRUCChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -366,13 +368,13 @@ fun codigoPostal(){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numContacto (modifier: Modifier = Modifier){
+fun numContacto (modifier: Modifier = Modifier, viewModel: AgregarPredioViewModel){
 
-    var numContacto by remember { mutableStateOf("") }
+    val numContacto: String by viewModel.numContacto.observeAsState(initial = "")
 
     TextField(
         value = numContacto,
-        onValueChange = { numContacto = it },
+        onValueChange = { viewModel.onnumContactoChange(it) },
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -398,13 +400,12 @@ fun numContacto (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun correoField (modifier: Modifier = Modifier){
+fun correoField (modifier: Modifier = Modifier,viewModel: AgregarPredioViewModel){
 
-    var correo by remember { mutableStateOf("") }
-
+    val correo : String by viewModel.correo.observeAsState(initial = "")
     TextField(
         value = correo,
-        onValueChange = { correo = it },
+        onValueChange = { viewModel.onCorreoChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -430,13 +431,13 @@ fun correoField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun direccionField (modifier: Modifier = Modifier){
+fun direccionField (modifier: Modifier = Modifier, viewModel: AgregarPredioViewModel){
 
-    var direccion by remember { mutableStateOf("") }
+    val direccion: String by viewModel.direccion.observeAsState(initial = "")
 
     TextField(
         value = direccion,
-        onValueChange = { direccion = it },
+        onValueChange = { viewModel.onDireccionChange(it) },
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(

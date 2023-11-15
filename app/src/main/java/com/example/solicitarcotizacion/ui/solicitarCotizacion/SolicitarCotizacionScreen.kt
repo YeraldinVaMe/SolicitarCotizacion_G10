@@ -33,6 +33,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -74,8 +75,10 @@ import com.google.relay.compose.RelayVector
 import com.google.relay.compose.tappable
 
 @Composable
-fun SolicitarCotizacion(navController: NavController){
+fun SolicitarCotizacion(navController: NavController, viewModel: SolicitarCotizacionViewModel){
     val image = painterResource(R.drawable.fondo2)
+
+    val nombre:String = viewModel.getNombre()
 
     Box {
         Image(
@@ -114,7 +117,7 @@ fun SolicitarCotizacion(navController: NavController){
                     .padding(bottom = 14.dp)
             ) {
                 GrupoNombrev1(
-                    inputNombre = "Adrian Ernesto Zavaleta Vega",
+                    inputNombre = nombre, // OBSSSSSS
                     modifier = Modifier
                         .rowWeight(1.0f)
                         .columnWeight(1.0f)
@@ -127,7 +130,8 @@ fun SolicitarCotizacion(navController: NavController){
                     onBtnVolverSeleccionarv1 = {navController.navigate(Screen.CatalogoServicios.route)},
                     onBtnBuscarPredio = {navController.navigate(Screen.VerPredio.route)},
                     onBtnRegistrarPredio = {navController.navigate(Screen.AgregarPredio.route)},
-                    modifier = Modifier.rowWeight(1.0f)
+                    modifier = Modifier.rowWeight(1.0f),
+                    viewModel = viewModel
                 )
             }
         }
@@ -138,7 +142,7 @@ fun SolicitarCotizacion(navController: NavController){
 @Composable
 fun SolicitarCotizacionPreview(){
     SolicitarCotizacionTheme {
-        SolicitarCotizacion(rememberNavController())
+        SolicitarCotizacion(rememberNavController(),SolicitarCotizacionViewModel())
     }
 }
 
@@ -148,8 +152,16 @@ fun CardPrincipalv1(
     modifier: Modifier = Modifier,
     onBtnVolverSeleccionarv1: () -> Unit = {},
     onBtnBuscarPredio: () -> Unit = {},
-    onBtnRegistrarPredio: () -> Unit = {}
+    onBtnRegistrarPredio: () -> Unit = {},
+    viewModel: SolicitarCotizacionViewModel
 ) {
+
+    val readonlyAdministracion : Boolean = viewModel.getReadonlyAdmin()
+    val readonlySeguridad : Boolean = viewModel.getReadonlySeguridad()
+    val readonlyLimpieza : Boolean = viewModel.getReadonlyLimpieza()
+    val readonlyJardineria: Boolean = viewModel.getReadonlyJardin()
+
+
     TopLevel(modifier = modifier) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(15.dp))
         {
@@ -158,19 +170,19 @@ fun CardPrincipalv1(
                 CardInfoServicios(modifier = Modifier.fillMaxWidth()) {
                     AdmGeneralv1 {
                         AdministraciNGeneral()
-                        numAdministracionGeneral(readonly = true)
+                        numAdministracionGeneral(viewModel = viewModel, readonly = readonlyAdministracion)
                     }
                     GuardiasSegv1 {
                         GuardiasDeSeguridad()
-                        numSeguridad(readonly = false)
+                        numSeguridad(viewModel = viewModel, readonly = readonlySeguridad)
                     }
                     ServLimpiezav1 {
                         ServicioDeLimpieza()
-                        numLimpieza(readonly = false)
+                        numLimpieza(viewModel = viewModel, readonly = readonlyLimpieza)
                     }
                     ServJardineriav1 {
                         ServicioDeJardinerA()
-                        numJardineria(readonly = false)
+                        numJardineria(viewModel = viewModel, readonly = readonlyJardineria)
                     }
                     BtnVolverSeleccionarv1(onBtnVolverSeleccionarv1 = onBtnVolverSeleccionarv1) {
                         VolverASeleccionar()
@@ -689,13 +701,12 @@ fun TopLevel(
 //FIELDS
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numAdministracionGeneral (modifier: Modifier = Modifier, readonly: Boolean){
+fun numAdministracionGeneral (modifier: Modifier = Modifier, viewModel: SolicitarCotizacionViewModel, readonly: Boolean){
 
-    var num by remember { mutableStateOf("1") }
-
+    val numAdm: String by viewModel.numAdm.observeAsState("1")
     TextField(
-        value = num,
-        onValueChange = { num = it },
+        value = numAdm,
+        onValueChange = { viewModel.onNumAdmChange(it)},
         textStyle = TextStyle(
             fontSize = 12.0.sp,
             color = Color(
@@ -714,19 +725,20 @@ fun numAdministracionGeneral (modifier: Modifier = Modifier, readonly: Boolean){
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Number
         ),
-        readOnly = readonly,
+        readOnly = readonly
     )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numSeguridad (modifier: Modifier = Modifier, readonly: Boolean){
+fun numSeguridad (modifier: Modifier = Modifier, viewModel: SolicitarCotizacionViewModel, readonly: Boolean){
 
-    var num by remember { mutableStateOf("0") }
+    val numGuardias: String by viewModel.numGuardias.observeAsState("0")
+
 
     TextField(
-        value = num,
-        onValueChange = { num = it },
+        value = numGuardias,
+        onValueChange = { viewModel.onNumGuardiasChange(it) },
         textStyle = TextStyle(
             fontSize = 12.0.sp,
             color = Color(
@@ -739,8 +751,7 @@ fun numSeguridad (modifier: Modifier = Modifier, readonly: Boolean){
         ),
         colors = TextFieldDefaults.textFieldColors(containerColor = MaterialTheme.colorScheme.secondary),
         modifier = modifier
-            .width(84.dp)
-            .fillMaxWidth(),
+            .width(84.dp),
         isError = false,
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Number
@@ -751,13 +762,13 @@ fun numSeguridad (modifier: Modifier = Modifier, readonly: Boolean){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numLimpieza (modifier: Modifier = Modifier, readonly: Boolean){
+fun numLimpieza (modifier: Modifier = Modifier, viewModel: SolicitarCotizacionViewModel, readonly: Boolean){
 
-    var num by remember { mutableStateOf("0") }
+    val numLimp: String by viewModel.numLimpieza.observeAsState("0")
 
     TextField(
-        value = num,
-        onValueChange = { num = it },
+        value = numLimp,
+        onValueChange = { viewModel.onNumLimpiezaChange(it) },
         textStyle = TextStyle(
             fontSize = 12.0.sp,
             color = Color(
@@ -770,8 +781,7 @@ fun numLimpieza (modifier: Modifier = Modifier, readonly: Boolean){
         ),
         colors = TextFieldDefaults.textFieldColors(containerColor = MaterialTheme.colorScheme.secondary),
         modifier = modifier
-            .width(84.dp)
-            .fillMaxWidth(),
+            .width(84.dp),
         isError = false,
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Number
@@ -782,13 +792,13 @@ fun numLimpieza (modifier: Modifier = Modifier, readonly: Boolean){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun numJardineria (modifier: Modifier = Modifier, readonly: Boolean){
+fun numJardineria (modifier: Modifier = Modifier, viewModel: SolicitarCotizacionViewModel, readonly: Boolean){
 
-    var num by remember { mutableStateOf("0") }
+    val numJardine: String by viewModel.numJardineria.observeAsState("0")
 
     TextField(
-        value = num,
-        onValueChange = { num = it },
+        value = numJardine,
+        onValueChange = { viewModel.onNumJardineriaChange(it) },
         textStyle = TextStyle(
             fontSize = 12.0.sp,
             color = Color(
@@ -801,8 +811,7 @@ fun numJardineria (modifier: Modifier = Modifier, readonly: Boolean){
         ),
         colors = TextFieldDefaults.textFieldColors(containerColor = MaterialTheme.colorScheme.secondary),
         modifier = modifier
-            .width(84.dp)
-            .fillMaxWidth(),
+            .width(84.dp),
         isError = false,
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Number

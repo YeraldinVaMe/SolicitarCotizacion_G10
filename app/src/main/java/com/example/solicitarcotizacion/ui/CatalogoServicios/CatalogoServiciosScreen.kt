@@ -18,6 +18,8 @@ import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -50,7 +52,7 @@ import com.google.relay.compose.RelayVector
 import com.google.relay.compose.tappable
 
 @Composable
-fun CatalogoServicios(navController: NavController) {
+fun CatalogoServicios(navController: NavController, viewModel: CatalogoServicioViewModel) {
     val image = painterResource(R.drawable.fondo2)
 
     Box {
@@ -86,7 +88,7 @@ fun CatalogoServicios(navController: NavController) {
                     .padding(bottom = 15.dp)
             ) {
                 BoxAdmGeneral(
-                    onBtnSeleccionar = {},
+                    onBtnSeleccionar = { viewModel.SeleccionarTodo() },
                     modifier = Modifier
                         .rowWeight(1.0f)
                         .columnWeight(1.0f)
@@ -101,7 +103,8 @@ fun CatalogoServicios(navController: NavController) {
                     modifier = Modifier
                         .rowWeight(1.0f)
                         .columnWeight(1.0f),
-                    navController = navController
+                    navController = navController,
+                    viewModel = viewModel
                 )
             }
         }
@@ -111,7 +114,7 @@ fun CatalogoServicios(navController: NavController) {
 @Preview(showBackground = false)
 @Composable
 fun CatalogoPreview(){
-    CatalogoServicios(rememberNavController())
+    CatalogoServicios(rememberNavController(), CatalogoServicioViewModel())
 }
 
 //BOX SERVICIOS ESPECÍFICOS
@@ -119,14 +122,15 @@ fun CatalogoPreview(){
 fun BoxServEspecificos(
     modifier: Modifier = Modifier,
     onbtnSolicitar: () -> Unit = {},
-    navController: NavController
+    navController: NavController,
+    viewModel: CatalogoServicioViewModel,
 ) {
-    val oncheckBoxGuardias = remember { mutableStateOf(false)}
-    val oncheckBoxLimpieza = remember { mutableStateOf(false)}
-    val oncheckBoxJardineria = remember { mutableStateOf(false)}
-    val oncheckBoxAreas = remember { mutableStateOf(false)}
 
-    oncheckBoxLimpieza
+    val oncheckBoxGuardias: Boolean by viewModel.oncheckBoxGuardias.observeAsState(false)
+    val oncheckBoxLimpieza: Boolean by viewModel.oncheckBoxLimpieza.observeAsState(false)
+    val oncheckBoxJardineria: Boolean by viewModel.oncheckBoxJardineria.observeAsState(false)
+    val oncheckBoxAreas: Boolean by viewModel.oncheckBoxAreas.observeAsState(false)
+
     TopLevel(modifier = modifier) {
         TopLevelSynth {
             Fondo()
@@ -145,8 +149,8 @@ fun BoxServEspecificos(
             )
 
             Checkbox(
-                checked = oncheckBoxGuardias.value,
-                onCheckedChange = {oncheckBoxGuardias.value = it},
+                checked = oncheckBoxGuardias,
+                onCheckedChange = {viewModel.onOncheckBoxGuardiasChange(it)},
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.TopCenter,
                     offset = DpOffset(
@@ -189,8 +193,8 @@ fun BoxServEspecificos(
                 )
             )
             Checkbox(
-                checked = oncheckBoxLimpieza.value,
-                onCheckedChange = {oncheckBoxLimpieza.value = it},
+                checked = oncheckBoxLimpieza,
+                onCheckedChange = {viewModel.onOncheckBoxLimpieza(it)},
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.TopCenter,
                     offset = DpOffset(
@@ -233,8 +237,8 @@ fun BoxServEspecificos(
             )
 
             Checkbox(
-                checked = oncheckBoxJardineria.value,
-                onCheckedChange = {oncheckBoxJardineria.value = it},
+                checked = oncheckBoxJardineria,
+                onCheckedChange = {viewModel.onnOncheckBoxJardineriaChange(it)},
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.TopCenter,
                     offset = DpOffset(
@@ -276,8 +280,8 @@ fun BoxServEspecificos(
                 )
             )
             Checkbox(
-                checked = oncheckBoxAreas.value,
-                onCheckedChange = {oncheckBoxAreas.value = it},
+                checked = oncheckBoxAreas,
+                onCheckedChange = {viewModel.onOncheckBoxAreasChange(it)},
                 modifier = Modifier.boxAlign(
                     alignment = Alignment.TopCenter,
                     offset = DpOffset(
@@ -371,7 +375,7 @@ fun Rectan1(modifier: Modifier = Modifier) {
 @Composable
 fun CheckBoxGuardias(
     oncheckBoxGuardias: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     RelayVector(
         vector = painterResource(R.drawable.box_serv_especificos_check_box_guardias),

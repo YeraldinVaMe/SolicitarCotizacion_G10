@@ -28,6 +28,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -55,6 +56,7 @@ import com.example.solicitarcotizacion.Navigation.Screen
 import com.example.solicitarcotizacion.R
 import com.example.solicitarcotizacion.cardagregarpredio12.poppins
 import com.example.solicitarcotizacion.titulo12principal.Titulo12principal
+import com.example.solicitarcotizacion.ui.AgregarPredio.AgregarPredioViewModel
 import com.google.relay.compose.CrossAxisAlignment
 import com.google.relay.compose.MainAxisAlignment
 import com.google.relay.compose.RelayContainer
@@ -65,8 +67,10 @@ import com.google.relay.compose.RelayVector
 import com.google.relay.compose.tappable
 
 @Composable
-fun AgregarAreasComunes(navController: NavController){
+fun AgregarAreasComunes(navController: NavController, viewModel: AgregarAreasComunesViewModel){
     val image = painterResource(R.drawable.fondo2)
+
+
     Box {
         Image(
             painter = image,
@@ -91,7 +95,7 @@ fun AgregarAreasComunes(navController: NavController){
             RelayContainer(
                 modifier = Modifier.fillMaxHeight()
             ) {
-                CardAgregarPredio12(navController = navController)
+                CardAgregarPredio12(navController = navController, viewModel = viewModel)
             }
         }
     }
@@ -101,7 +105,7 @@ fun AgregarAreasComunes(navController: NavController){
 @Composable
 fun AgregarAreasComunesView(){
     MaterialTheme {
-        AgregarAreasComunes(rememberNavController())
+        AgregarAreasComunes(rememberNavController(), AgregarAreasComunesViewModel())
     }
 }
 
@@ -113,8 +117,10 @@ fun CardAgregarPredio12(
     onBtnSolicitarCotizacion: () -> Unit = {},
     onBtnAgregarAreaComun: () -> Unit = {},
     onBtnEliminarArea: () -> Unit = {},
-    navController: NavController
+    navController: NavController,
+    viewModel: AgregarAreasComunesViewModel
 ) {
+    val cantAreasComunes : String = viewModel.getInputCantAreas()
     TopLevel(modifier = modifier) {
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(15.dp)
@@ -125,9 +131,9 @@ fun CardAgregarPredio12(
                     Modifier.fillMaxWidth()
                 ) {
                     ReaPredioM()
-                    areaPredioField()
+                    areaPredioField(viewModel = viewModel)
                     NMeroDeCasasHabitaciN()
-                    nroCasasField()
+                    nroCasasField(viewModel = viewModel)
                 }
             }
             item {
@@ -160,12 +166,12 @@ fun CardAgregarPredio12(
                         }
                         Frame47 {
                             tipoAreaComun()
-                            areaAreaComun()
+                            areaAreaComun(viewModel = viewModel)
                         }
                     }
                     CantidadDeReasComunes()
                     Frame70 {
-                        Class2(inputCantAreas = inputCantAreas)
+                        Class2(inputCantAreas = cantAreasComunes)
                     }
                 }
             }
@@ -708,13 +714,12 @@ fun TopLevel(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun areaPredioField (modifier: Modifier = Modifier){
+fun areaPredioField (modifier: Modifier = Modifier, viewModel: AgregarAreasComunesViewModel){
 
-    var areaPredio by remember { mutableStateOf("") }
-
+    val areaPredio: String by viewModel.areaPredio.observeAsState(initial = "")
     TextField(
         value = areaPredio,
-        onValueChange = { areaPredio = it },
+        onValueChange = { viewModel.onAreaPredioChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -740,13 +745,12 @@ fun areaPredioField (modifier: Modifier = Modifier){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun nroCasasField (modifier: Modifier = Modifier){
+fun nroCasasField (modifier: Modifier = Modifier, viewModel: AgregarAreasComunesViewModel){
 
-    var nroCasas by remember { mutableStateOf("") }
-
+    val nroCasas: String by viewModel.nroCasas.observeAsState(initial = "")
     TextField(
-        value = nroCasas,
-        onValueChange = { nroCasas = it },
+        value = nroCasas.toString(),
+        onValueChange = {viewModel.onNroCasasChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(
@@ -817,13 +821,12 @@ fun tipoAreaComun(){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun areaAreaComun (modifier: Modifier = Modifier){
+fun areaAreaComun (modifier: Modifier = Modifier, viewModel: AgregarAreasComunesViewModel){
 
-    var areaComun by remember { mutableStateOf("") }
-
+    val areaComun: String by viewModel.areaComun.observeAsState(initial = "")
     TextField(
         value = areaComun,
-        onValueChange = { areaComun = it },
+        onValueChange = { viewModel.onAreaComunChange(it)},
         textStyle = TextStyle(
             fontSize = 14.0.sp,
             color = Color(

@@ -7,21 +7,31 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
+import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
@@ -45,8 +55,10 @@ import com.google.relay.compose.RelayVector
 import com.google.relay.compose.tappable
 
 @Composable
-fun VerAreasComunes(navController: NavController){
+fun VerAreasComunes(navController: NavController, viewModel: VerAreasComunesViewModel){
     val image = painterResource(R.drawable.fondo2)
+
+    val cantAreasComunes : String = viewModel.getInputCantidadAreaText()
 
     Box {
         Image(
@@ -75,9 +87,10 @@ fun VerAreasComunes(navController: NavController){
                 CardAgregarPredioAux(
                     inputTipoAreaAuxxtext = "Parque interno",
                     inputAreaAuxxtext = "888",
-                    inputCantidadAreatext = "2",
+                    inputCantidadAreatext = cantAreasComunes,
                     modifier = Modifier.columnWeight(1.0f),
                     onBtnSolicitarCotizacionAux = {navController.navigate(Screen.Resumen.route)},
+                    viewModel = viewModel
                 )
             }
         }
@@ -88,7 +101,7 @@ fun VerAreasComunes(navController: NavController){
 @Composable
 fun VerAreasComunesView(){
     MaterialTheme {
-        VerAreasComunes(rememberNavController())
+        VerAreasComunes(rememberNavController(), VerAreasComunesViewModel())
     }
 }
 
@@ -99,23 +112,28 @@ fun CardAgregarPredioAux(
     inputTipoAreaAuxxtext: String = "",
     inputAreaAuxxtext: String = "",
     inputCantidadAreatext: String = "",
-    onBtnSolicitarCotizacionAux: () -> Unit = {}
+    onBtnSolicitarCotizacionAux: () -> Unit = {},
+    viewModel: VerAreasComunesViewModel
 ) {
     TopLevel(modifier = modifier) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(15.dp))
         {
             item {
                 PropiedadAux()
-                CardAreaPropiedadAux {
+                CardAreaPropiedadAux(
+                    Modifier.fillMaxWidth()
+                ) {
                     ReaPredioM()
-                    ContenidoAreapredio()
+                    areaPredio(viewModel = viewModel)
                     NMeroDeCasasHabitaciN()
-                    ContenidoNumCasas()
+                    nroCasas(viewModel = viewModel)
                 }
             }
             item {
                 ServicioAux()
-                CardAgregarAreasComunesAux {
+                CardAgregarAreasComunesAux(
+                    Modifier.fillMaxWidth()
+                ) {
                     ReasComunes()
                     BotonesAux {
                         BtnAgregarAreaComunAux {
@@ -141,7 +159,7 @@ fun CardAgregarPredioAux(
                         FrameTipoArea {
                             ConteTipoareaAux {
                                 InputTipoAreaAuxx(
-                                    inputTipoAreaAuxxtext = inputTipoAreaAuxxtext,
+                                    viewModel = viewModel,
                                     modifier = Modifier.boxAlign(
                                         alignment = Alignment.TopStart,
                                         offset = DpOffset(
@@ -154,7 +172,7 @@ fun CardAgregarPredioAux(
                             }
                             AreaAuxx {
                                 InputAreaAuxx(
-                                    inputAreaAuxxtext = inputAreaAuxxtext,
+                                    viewModel = viewModel,
                                     modifier = Modifier.boxAlign(
                                         alignment = Alignment.TopStart,
                                         offset = DpOffset(
@@ -169,7 +187,7 @@ fun CardAgregarPredioAux(
                     }
                     CantidadDeReasComunes()
                     Frame70 {
-                        InputCantidadArea(inputCantidadAreatext = inputCantidadAreatext)
+                        InputCantidadArea(inputCantidadAreatext)
                     }
                 }
             }
@@ -484,9 +502,10 @@ fun Frame46(
 
 @Composable
 fun InputTipoAreaAuxx(
-    inputTipoAreaAuxxtext: String,
+    viewModel: VerAreasComunesViewModel,
     modifier: Modifier = Modifier
 ) {
+    val inputTipoAreaAuxxtext: String by viewModel.inputTipoAreaAuxxtext.observeAsState("")
     RelayText(
         content = inputTipoAreaAuxxtext,
         fontSize = 15.0.sp,
@@ -545,9 +564,10 @@ fun ConteTipoareaAux(
 
 @Composable
 fun InputAreaAuxx(
-    inputAreaAuxxtext: String,
+    viewModel: VerAreasComunesViewModel,
     modifier: Modifier = Modifier
 ) {
+    val inputAreaAuxxtext: String by viewModel.inputAreaAuxxtext.observeAsState("")
     RelayText(
         content = inputAreaAuxxtext,
         fontSize = 15.0.sp,
@@ -663,7 +683,7 @@ fun CantidadDeReasComunes(modifier: Modifier = Modifier) {
 
 @Composable
 fun InputCantidadArea(
-    inputCantidadAreatext: String,
+    inputCantidadAreatext: String = "",
     modifier: Modifier = Modifier
 ) {
     RelayText(
@@ -805,5 +825,66 @@ fun TopLevel(
         radius = 10.0,
         content = content,
         modifier = modifier.fillMaxHeight(1.0f)
+    )
+}
+
+//FIELDS
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun areaPredio (modifier: Modifier = Modifier, viewModel: VerAreasComunesViewModel){
+    val areaPredio: String by viewModel.areaPredio.observeAsState(initial = "")
+    TextField(
+        value = areaPredio,
+        onValueChange = { viewModel.onAreaPredioChange(it)},
+        textStyle = TextStyle(
+            fontSize = 14.0.sp,
+            color = Color(
+                alpha = 255,
+                red = 0,
+                green = 0,
+                blue = 0
+            ),
+            textAlign = TextAlign.Left
+        ),
+        colors = TextFieldDefaults.textFieldColors(containerColor = MaterialTheme.colorScheme.secondary),
+        modifier = modifier
+            .fillMaxWidth(),
+        placeholder = {
+            Text(text = "Ingrese el área")
+        },
+        isError = false,
+        keyboardOptions = KeyboardOptions(
+            keyboardType = KeyboardType.Number
+        )
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun nroCasas (modifier: Modifier = Modifier, viewModel: VerAreasComunesViewModel){
+    val nroCasas: String by viewModel.nroCasas.observeAsState(initial = "")
+    TextField(
+        value = nroCasas,
+        onValueChange = { viewModel.onNroCasasChange(it)},
+        textStyle = TextStyle(
+            fontSize = 14.0.sp,
+            color = Color(
+                alpha = 255,
+                red = 0,
+                green = 0,
+                blue = 0
+            ),
+            textAlign = TextAlign.Left
+        ),
+        colors = TextFieldDefaults.textFieldColors(containerColor = MaterialTheme.colorScheme.secondary),
+        modifier = modifier
+            .fillMaxWidth(),
+        placeholder = {
+            Text(text = "Ingrese cantidad")
+        },
+        isError = false,
+        keyboardOptions = KeyboardOptions(
+            keyboardType = KeyboardType.Number
+        )
     )
 }
