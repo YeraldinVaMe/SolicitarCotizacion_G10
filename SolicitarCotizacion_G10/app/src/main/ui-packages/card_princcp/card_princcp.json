@@ -1,0 +1,623 @@
+{
+  "name": "card_princcp",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "95:287",
+    "version": "4360223452",
+    "component-id": "e10f046eae788410c25120de9c444f7592c145d3"
+  },
+  "default": "CardPrinccp",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "groupPrincipp"
+      },
+      {
+        "type": "text",
+        "id": "Bienvenido a CONDOSA"
+      },
+      {
+        "type": "text",
+        "id": "celectronico"
+      },
+      {
+        "type": "group",
+        "id": "fas3"
+      },
+      {
+        "type": "text",
+        "id": "con"
+      },
+      {
+        "type": "group",
+        "id": "reca32"
+      },
+      {
+        "type": "group",
+        "id": "GrupoInit"
+      },
+      {
+        "type": "group",
+        "id": "GroupRegs"
+      },
+      {
+        "type": "group",
+        "id": "initR"
+      },
+      {
+        "type": "group",
+        "id": "init"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 59"
+      },
+      {
+        "type": "text",
+        "id": "Registrarse"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 60"
+      },
+      {
+        "type": "text",
+        "id": "Iniciar Sesión"
+      },
+      {
+        "type": "vector",
+        "id": "rff12"
+      },
+      {
+        "type": "vector",
+        "id": "rec55"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 39"
+      },
+      {
+        "type": "text",
+        "id": "issss"
+      },
+      {
+        "type": "text",
+        "id": "notc"
+      },
+      {
+        "type": "text",
+        "id": "regss"
+      }
+    ],
+    "modes": {
+      "CardPrinccp": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "15.0",
+              "top": "10.0",
+              "right": "15.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "groupPrincipp",
+              "Bienvenido a CONDOSA",
+              "celectronico",
+              "fas3",
+              "con",
+              "reca32",
+              "GrupoInit",
+              "GroupRegs"
+            ],
+            "item-spacing": "26.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "groupPrincipp",
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "initR",
+              "init"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Bienvenido a CONDOSA",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "286.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Bienvenido a CONDOSA",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "23.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "celectronico",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "297.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Correo electrónico:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "17.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "fas3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "rff12"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "con",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Contraseña:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "17.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "reca32",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "rec55"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "GrupoInit",
+            "border-radius": "40.0",
+            "tap-handler": "$onGrupoInittapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 39",
+              "issss"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "GroupRegs",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "260.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "notc",
+              "regss"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "initR",
+            "border-radius": "40.0",
+            "tap-handler": "$oninitRtapped",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 59",
+              "Registrarse"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "init",
+            "margin": {
+              "right": "139.0"
+            },
+            "border-radius": "40.0",
+            "tap-handler": "$oninittapped",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 60",
+              "Iniciar Sesión"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 59",
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_59.svg"
+          },
+          {
+            "id": "Registrarse",
+            "margin": {
+              "left": "181.0",
+              "top": "17.0",
+              "bottom": "7.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 60",
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_60.svg"
+          },
+          {
+            "id": "Iniciar Sesión",
+            "margin": {
+              "left": "15.0",
+              "top": "17.0",
+              "bottom": "7.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Iniciar Sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "rff12",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rff12.svg"
+          },
+          {
+            "id": "rec55",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rec55.svg"
+          },
+          {
+            "id": "Rectangle 39",
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_39.svg"
+          },
+          {
+            "id": "issss",
+            "margin": {
+              "left": "70.0",
+              "top": "12.0",
+              "right": "70.0",
+              "bottom": "12.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Iniciar Sesión",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "notc",
+            "margin": {
+              "right": "58.549560546875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "¿No tienes una cuenta?",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "regss",
+            "margin": {
+              "left": "158.77880859375"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onregsstapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "224.43037974683543",
+              "saturation": "0.7707317073170732",
+              "value": "0.803921568627451"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins",
+            "underline": "true"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onGrupoInittapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oninitRtapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "oninittapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onregsstapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardPrinccp",
+      "size": {
+        "width": 338.0,
+        "height": 494.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

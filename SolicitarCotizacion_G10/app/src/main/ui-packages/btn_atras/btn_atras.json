@@ -1,0 +1,140 @@
+{
+  "name": "btn_atras",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "5:149",
+    "version": "4232574785",
+    "component-id": "9faf2e8f011c2a243410d819917445a7f4ec4cde"
+  },
+  "default": "btnAtras",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6"
+      },
+      {
+        "type": "group",
+        "id": "🦆 icon \"chevron left\""
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "btnAtras": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onbtn1",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 6",
+              "🦆 icon \"chevron left\""
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 6",
+            "border-radius": "15.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-22.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-20.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "42.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "vector-content": "rectangle_6.svg"
+          },
+          {
+            "id": "🦆 icon \"chevron left\"",
+            "margin": {
+              "left": "9.0",
+              "top": "6.0",
+              "right": "10.95916748046875",
+              "bottom": "5.58697509765625"
+            },
+            "tap-handler": "$onBtnAtrasR",
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.41302490234375"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onbtn1": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtnAtrasR": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "btnAtras",
+      "size": {
+        "width": 42.0,
+        "height": 41.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

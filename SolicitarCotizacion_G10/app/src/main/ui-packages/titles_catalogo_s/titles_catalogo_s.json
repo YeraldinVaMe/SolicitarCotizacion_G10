@@ -1,0 +1,105 @@
+{
+  "name": "titles_catalogo_s",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "nzjx4NtHLj8M8XdzC9UH2R",
+    "node": "5:196",
+    "version": "4232574785",
+    "component-id": "522b809a579acb4a7733454a7b6faef9cf7d6dc6"
+  },
+  "default": "titlesCatalogoS",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Catálogo de servicios"
+      },
+      {
+        "type": "text",
+        "id": "textBienbenida"
+      }
+    ],
+    "modes": {
+      "titlesCatalogoS": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Catálogo de servicios",
+              "textBienbenida"
+            ],
+            "item-spacing": "40.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Catálogo de servicios",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Catálogo de servicios",
+            "overflow": "visible",
+            "text-size": "25.0",
+            "line-height": "1.1080000305175781",
+            "typeface": "Podkova"
+          },
+          {
+            "id": "textBienbenida",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "En Condosa contamos con viviendas con una o más de los siguientes servicios u áreas:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "titlesCatalogoS",
+      "size": {
+        "width": 308.0,
+        "height": 137.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

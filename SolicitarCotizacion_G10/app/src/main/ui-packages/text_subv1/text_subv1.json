@@ -1,0 +1,77 @@
+{
+  "name": "text_subv1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "7:58",
+    "version": "4530745273",
+    "component-id": "bcb21f406f249c595ca5045a6404e781d85159cd"
+  },
+  "default": "TextSubv1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "¡Adelante, cuéntanos tus necesidades y déjanos trabajar para ti!"
+      }
+    ],
+    "modes": {
+      "TextSubv1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "¡Adelante, cuéntanos tus necesidades y déjanos trabajar para ti!"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "¡Adelante, cuéntanos tus necesidades y déjanos trabajar para ti!",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": " ¡Adelante, cuéntanos tus necesidades y déjanos trabajar para ti!",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "TextSubv1",
+      "size": {
+        "width": 308.0,
+        "height": 46.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,431 @@
+{
+  "name": "card_loginv1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "41:374",
+    "version": "4531608979",
+    "component-id": "869140408366530077f2b8ce2d797cd5a0c674e1"
+  },
+  "default": "CardLoginv1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "BtnRegistrarse"
+      },
+      {
+        "type": "text",
+        "id": "Bienvenido a CONDOSA"
+      },
+      {
+        "type": "text",
+        "id": "celectronico"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 60"
+      },
+      {
+        "type": "text",
+        "id": "con"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 61"
+      },
+      {
+        "type": "group",
+        "id": "Btn_IniciarSesion"
+      },
+      {
+        "type": "group",
+        "id": "GroupRegs"
+      },
+      {
+        "type": "text",
+        "id": "Registrarse"
+      },
+      {
+        "type": "text",
+        "id": "Iniciar Sesión"
+      },
+      {
+        "type": "text",
+        "id": "¿No tienes una cuenta?"
+      },
+      {
+        "type": "text",
+        "id": "textRegistrarse"
+      }
+    ],
+    "modes": {
+      "CardLoginv1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "15.0",
+              "top": "20.0",
+              "right": "15.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "BtnRegistrarse",
+              "Bienvenido a CONDOSA",
+              "celectronico",
+              "Rectangle 60",
+              "con",
+              "Rectangle 61",
+              "Btn_IniciarSesion",
+              "GroupRegs"
+            ],
+            "item-spacing": "30.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "BtnRegistrarse",
+            "padding": {
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "border-radius": "40.0",
+            "tap-handler": "$onBtnRegistrarse",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Registrarse"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Bienvenido a CONDOSA",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Bienvenido a CONDOSA",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "23.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "celectronico",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "297.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Correo electrónico:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "17.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 60",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "vector-content": "rectangle_60.svg"
+          },
+          {
+            "id": "con",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Contraseña:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "17.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Rectangle 61",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "vector-content": "rectangle_61.svg"
+          },
+          {
+            "id": "Btn_IniciarSesion",
+            "padding": {
+              "left": "70.0",
+              "top": "12.0",
+              "right": "70.0",
+              "bottom": "12.0"
+            },
+            "border-radius": "40.0",
+            "tap-handler": "$onBtn_IniciarSesion",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "308.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Iniciar Sesión"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "GroupRegs",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "¿No tienes una cuenta?",
+              "textRegistrarse"
+            ],
+            "item-spacing": "7.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Registrarse",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Iniciar Sesión",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Iniciar Sesión",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "18.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "¿No tienes una cuenta?",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "¿No tienes una cuenta?",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "textRegistrarse",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$ontextRegistrarse",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "102.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "224.43037974683543",
+              "saturation": "0.7707317073170732",
+              "value": "0.803921568627451"
+            },
+            "text-content": "Registrarse",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "13.0",
+            "line-height": "1.5",
+            "typeface": "Poppins",
+            "underline": "true"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnRegistrarse": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtn_IniciarSesion": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "ontextRegistrarse": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardLoginv1",
+      "size": {
+        "width": 338.0,
+        "height": 530.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

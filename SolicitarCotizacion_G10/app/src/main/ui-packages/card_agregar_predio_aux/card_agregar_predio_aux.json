@@ -1,0 +1,950 @@
+{
+  "name": "card_agregar_predio_aux",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "55:445",
+    "version": "4531883313",
+    "component-id": "ccf2b1c5508e407c0eb3d4961711564799a2e6f5"
+  },
+  "default": "CardAgregarPredioAux",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Propiedad:Aux"
+      },
+      {
+        "type": "group",
+        "id": "CardAreaPropiedadAux"
+      },
+      {
+        "type": "text",
+        "id": "Servicio:Aux"
+      },
+      {
+        "type": "group",
+        "id": "CardAgregarAreasComunesAux"
+      },
+      {
+        "type": "group",
+        "id": "BtnSolicitarCotizacionAux"
+      },
+      {
+        "type": "text",
+        "id": "Área predio (m²)"
+      },
+      {
+        "type": "vector",
+        "id": "ContenidoAreapredio"
+      },
+      {
+        "type": "text",
+        "id": "Número de casas - Habitación:"
+      },
+      {
+        "type": "vector",
+        "id": "ContenidoNumCasas"
+      },
+      {
+        "type": "text",
+        "id": "Áreas comunes:"
+      },
+      {
+        "type": "group",
+        "id": "BotonesAux"
+      },
+      {
+        "type": "group",
+        "id": "CardTipoAreaAux"
+      },
+      {
+        "type": "text",
+        "id": "Cantidad de áreas comunes:"
+      },
+      {
+        "type": "group",
+        "id": "Frame 70"
+      },
+      {
+        "type": "group",
+        "id": "BtnAgregarAreaComunAux"
+      },
+      {
+        "type": "group",
+        "id": "BtnEliminarAreaAux"
+      },
+      {
+        "type": "text",
+        "id": "Agregar"
+      },
+      {
+        "type": "text",
+        "id": "Eliminar"
+      },
+      {
+        "type": "group",
+        "id": "Frame 46"
+      },
+      {
+        "type": "group",
+        "id": "FrameTipoArea"
+      },
+      {
+        "type": "text",
+        "id": "Tipo de área común"
+      },
+      {
+        "type": "text",
+        "id": "Área (m²)"
+      },
+      {
+        "type": "group",
+        "id": "ConteTipoareaAux"
+      },
+      {
+        "type": "group",
+        "id": "AreaAuxx"
+      },
+      {
+        "type": "text",
+        "id": "inputTipoAreaAuxx"
+      },
+      {
+        "type": "group",
+        "id": "ConteTipoareaAux_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputAreaAuxx"
+      },
+      {
+        "type": "group",
+        "id": "AreaAuxx_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputCantidadArea"
+      },
+      {
+        "type": "text",
+        "id": "Solicitar cotización"
+      }
+    ],
+    "modes": {
+      "CardAgregarPredioAux": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "17.0",
+              "right": "13.0",
+              "bottom": "18.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Propiedad:Aux",
+              "CardAreaPropiedadAux",
+              "Servicio:Aux",
+              "CardAgregarAreasComunesAux",
+              "BtnSolicitarCotizacionAux"
+            ],
+            "item-spacing": "17.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Propiedad:Aux",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Propiedad:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "CardAreaPropiedadAux",
+            "padding": {
+              "left": "8.0",
+              "top": "21.0",
+              "right": "8.0",
+              "bottom": "21.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Área predio (m²)",
+              "ContenidoAreapredio",
+              "Número de casas - Habitación:",
+              "ContenidoNumCasas"
+            ],
+            "item-spacing": "7.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Servicio:Aux",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "74.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "CardAgregarAreasComunesAux",
+            "padding": {
+              "left": "5.0",
+              "top": "10.0",
+              "right": "5.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "325.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Áreas comunes:",
+              "BotonesAux",
+              "CardTipoAreaAux",
+              "Cantidad de áreas comunes:",
+              "Frame 70"
+            ],
+            "item-spacing": "30.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "BtnSolicitarCotizacionAux",
+            "padding": {
+              "left": "20.0",
+              "top": "10.0",
+              "right": "20.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnSolicitarCotizacionAux",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "323.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Solicitar cotización"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Área predio (m²)",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "140.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Área predio (m²)",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenidoAreapredio",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "contenido_areapredio.svg"
+          },
+          {
+            "id": "Número de casas - Habitación:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "246.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Número de casas - Habitación:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenidoNumCasas",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "vector-content": "contenido_num_casas.svg"
+          },
+          {
+            "id": "Áreas comunes:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "134.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Áreas comunes:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "BotonesAux",
+            "border-radius": "30.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "304.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "BtnAgregarAreaComunAux",
+              "BtnEliminarAreaAux"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "CardTipoAreaAux",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "stroke-color": {
+              "alpha": "0.4980392156862745",
+              "hue": "214.28571428571428",
+              "saturation": "0.13725490196078438",
+              "value": "0.4"
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "Frame 46",
+              "FrameTipoArea"
+            ],
+            "item-spacing": "2.0"
+          },
+          {
+            "id": "Cantidad de áreas comunes:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "248.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Cantidad de áreas comunes:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Frame 70",
+            "padding": {
+              "left": "30.0",
+              "top": "8.0",
+              "right": "30.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "inputCantidadArea"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "BtnAgregarAreaComunAux",
+            "padding": {
+              "left": "17.0",
+              "top": "6.0",
+              "right": "17.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "151.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Agregar"
+            ],
+            "item-spacing": "20.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "214.28571428571428",
+              "saturation": "0.13725490196078438",
+              "value": "0.4"
+            }
+          },
+          {
+            "id": "BtnEliminarAreaAux",
+            "padding": {
+              "left": "20.0",
+              "top": "6.0",
+              "right": "20.0",
+              "bottom": "6.0"
+            },
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "158.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "146.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Eliminar"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "214.28571428571428",
+              "saturation": "0.13725490196078438",
+              "value": "0.4"
+            }
+          },
+          {
+            "id": "Agregar",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Agregar",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Eliminar",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Eliminar",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Frame 46",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Tipo de área común",
+              "Área (m²)"
+            ],
+            "item-spacing": "26.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "FrameTipoArea",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "ConteTipoareaAux",
+              "AreaAuxx"
+            ],
+            "item-spacing": "18.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Tipo de área común",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "161.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Tipo de área común",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Área (m²)",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "78.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Área (m²)",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ConteTipoareaAux",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputTipoAreaAuxx",
+              "ConteTipoareaAux_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "AreaAuxx",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputAreaAuxx",
+              "AreaAuxx_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "inputTipoAreaAuxx",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "10.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "7.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "123.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputTipoAreaAuxxtext",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ConteTipoareaAux_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputAreaAuxx",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "7.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "8.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputAreaAuxxtext",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "AreaAuxx_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "108.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputCantidadArea",
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputCantidadAreatext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Solicitar cotización",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Solicitar cotización",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBtnSolicitarCotizacionAux": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "inputTipoAreaAuxxtext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputAreaAuxxtext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputCantidadAreatext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardAgregarPredioAux",
+      "size": {
+        "width": 351.0,
+        "height": 726.0
+      },
+      "parameters": {
+        "inputTipoAreaAuxxtext": "Parque interno",
+        "inputAreaAuxxtext": "888",
+        "inputCantidadAreatext": "2"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

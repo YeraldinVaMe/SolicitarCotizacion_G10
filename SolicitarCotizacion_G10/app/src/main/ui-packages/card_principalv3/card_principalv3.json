@@ -1,0 +1,1211 @@
+{
+  "name": "card_principalv3",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "41:270",
+    "version": "4531754389",
+    "component-id": "b0604162776b14021cdce8cfb529c2db21b62dbd"
+  },
+  "default": "CardPrincipalv3",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Formato de la solicitud:"
+      },
+      {
+        "type": "group",
+        "id": "ContenedorPrincipal"
+      },
+      {
+        "type": "group",
+        "id": "CardPrincipalvv3"
+      },
+      {
+        "type": "text",
+        "id": "N° Solicitud:"
+      },
+      {
+        "type": "group",
+        "id": "Solicitud"
+      },
+      {
+        "type": "text",
+        "id": "Nombre del solicitante:"
+      },
+      {
+        "type": "group",
+        "id": "NombreSolicitante"
+      },
+      {
+        "type": "text",
+        "id": "Fecha de solicitud:"
+      },
+      {
+        "type": "group",
+        "id": "Fecha"
+      },
+      {
+        "type": "text",
+        "id": "Predio:"
+      },
+      {
+        "type": "group",
+        "id": "NombrePredio"
+      },
+      {
+        "type": "text",
+        "id": "Área del predio:"
+      },
+      {
+        "type": "group",
+        "id": "AreaPredio"
+      },
+      {
+        "type": "text",
+        "id": "Número de casas - Habitación:"
+      },
+      {
+        "type": "group",
+        "id": "NumeroCasas"
+      },
+      {
+        "type": "text",
+        "id": "Áreas comunes:"
+      },
+      {
+        "type": "group",
+        "id": "AreasComunes"
+      },
+      {
+        "type": "text",
+        "id": "Servicio solicitado:"
+      },
+      {
+        "type": "group",
+        "id": "ServicioSolicitado"
+      },
+      {
+        "type": "text",
+        "id": "inputSolicitud"
+      },
+      {
+        "type": "group",
+        "id": "Solicitud_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputNombreSolicitante"
+      },
+      {
+        "type": "group",
+        "id": "NombreSolicitante_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputFecha"
+      },
+      {
+        "type": "group",
+        "id": "Fecha_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputNombrePredio"
+      },
+      {
+        "type": "group",
+        "id": "NombrePredio_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputAreaPredio"
+      },
+      {
+        "type": "group",
+        "id": "AreaPredio_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputNumeroCasas"
+      },
+      {
+        "type": "group",
+        "id": "NumeroCasas_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputAreasComunes"
+      },
+      {
+        "type": "group",
+        "id": "AreasComunes_synth"
+      },
+      {
+        "type": "text",
+        "id": "inputServicioSolicitado"
+      },
+      {
+        "type": "group",
+        "id": "ServicioSolicitado_synth"
+      },
+      {
+        "type": "group",
+        "id": "BtnEnviarCorreo"
+      },
+      {
+        "type": "group",
+        "id": "BtnMenuPrincipal"
+      },
+      {
+        "type": "text",
+        "id": "Enviar al correo"
+      },
+      {
+        "type": "text",
+        "id": "Regresar al Menú principal"
+      }
+    ],
+    "modes": {
+      "CardPrincipalv3": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "15.0",
+              "top": "13.0",
+              "right": "15.0",
+              "bottom": "13.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Formato de la solicitud:",
+              "ContenedorPrincipal",
+              "CardPrincipalvv3"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Formato de la solicitud:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "179.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Formato de la solicitud:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ContenedorPrincipal",
+            "padding": {
+              "left": "15.0",
+              "top": "10.0",
+              "right": "15.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "N° Solicitud:",
+              "Solicitud",
+              "Nombre del solicitante:",
+              "NombreSolicitante",
+              "Fecha de solicitud:",
+              "Fecha",
+              "Predio:",
+              "NombrePredio",
+              "Área del predio:",
+              "AreaPredio",
+              "Número de casas - Habitación:",
+              "NumeroCasas",
+              "Áreas comunes:",
+              "AreasComunes",
+              "Servicio solicitado:",
+              "ServicioSolicitado"
+            ],
+            "item-spacing": "4.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "CardPrincipalvv3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "BtnEnviarCorreo",
+              "BtnMenuPrincipal"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "N° Solicitud:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "106.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "N°  Solicitud:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Solicitud",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputSolicitud",
+              "Solicitud_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Nombre del solicitante:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "184.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Nombre del solicitante:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NombreSolicitante",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputNombreSolicitante",
+              "NombreSolicitante_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Fecha de solicitud:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Fecha de solicitud:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Fecha",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputFecha",
+              "Fecha_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Predio:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "69.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Predio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NombrePredio",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputNombrePredio",
+              "NombrePredio_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Área del predio:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "129.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Área del predio:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "AreaPredio",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputAreaPredio",
+              "AreaPredio_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Número de casas - Habitación:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "256.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Número de casas - Habitación:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NumeroCasas",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputNumeroCasas",
+              "NumeroCasas_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Áreas comunes:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "132.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Áreas comunes:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "AreasComunes",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputAreasComunes",
+              "AreasComunes_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Servicio solicitado:",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "144.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Servicio solicitado:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ServicioSolicitado",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "inputServicioSolicitado",
+              "ServicioSolicitado_synth"
+            ],
+            "background-color": {
+              "alpha": "0.34901960784313724",
+              "hue": "216.46153846153845",
+              "saturation": "0.5439330543933054",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "inputSolicitud",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "9.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputSolicitudtext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Solicitud_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputNombreSolicitante",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "11.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputNombreSolicitantetext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NombreSolicitante_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputFecha",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "8.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "9.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputFechatext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Fecha_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputNombrePredio",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputNombrePrediotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NombrePredio_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputAreaPredio",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "11.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "9.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputAreaPrediotext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "AreaPredio_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputNumeroCasas",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "9.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputNumeroCasastext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "NumeroCasas_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputAreasComunes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "7.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "9.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputAreasComunestext",
+            "overflow": "visible",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "AreasComunes_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "39.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "inputServicioSolicitado",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "7.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "290.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$inputServicioSolicitadotext",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "ServicioSolicitado_synth",
+            "opacity": "100.0",
+            "padding": "10.0",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink",
+                "min": "307.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "54.0"
+              }
+            },
+            "arrangement": "row",
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "BtnEnviarCorreo",
+            "padding": {
+              "left": "20.0",
+              "top": "4.0",
+              "right": "20.0",
+              "bottom": "4.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnEnviarCorreo",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "158.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Enviar al correo"
+            ],
+            "item-spacing": "20.0",
+            "background-color": {
+              "alpha": "0.7490196078431373",
+              "hue": "0.0",
+              "saturation": "0.7710843373493976",
+              "value": "0.9764705882352941"
+            }
+          },
+          {
+            "id": "BtnMenuPrincipal",
+            "padding": {
+              "left": "20.0",
+              "top": "1.0",
+              "right": "20.0",
+              "bottom": "1.0"
+            },
+            "border-radius": "30.0",
+            "tap-handler": "$onBtnMenuPrincipal",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "167.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Regresar al Menú principal"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.47058823529412",
+              "saturation": "0.914798206278027",
+              "value": "0.8745098039215686"
+            }
+          },
+          {
+            "id": "Enviar al correo",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Enviar al \ncorreo",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Regresar al Menú principal",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Regresar al\nMenú principal",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "inputSolicitudtext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputNombreSolicitantetext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputFechatext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputNombrePrediotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputAreaPrediotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputNumeroCasastext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputAreasComunestext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "inputServicioSolicitadotext": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "onBtnEnviarCorreo": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onBtnMenuPrincipal": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CardPrincipalv3",
+      "size": {
+        "width": 367.0,
+        "height": 716.0
+      },
+      "parameters": {
+        "inputSolicitudtext": "89",
+        "inputNombreSolicitantetext": "Ricardo Manuel Torres Velasquez",
+        "inputFechatext": "2023-09-20 ",
+        "inputNombrePrediotext": "Las Gaviotas",
+        "inputAreaPrediotext": "1000 m²",
+        "inputNumeroCasastext": "20",
+        "inputAreasComunestext": "380.4 m² total (4)",
+        "inputServicioSolicitadotext": "Administracion (1), Seguridad(2), Limpieza (2), Jardineria(3)"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

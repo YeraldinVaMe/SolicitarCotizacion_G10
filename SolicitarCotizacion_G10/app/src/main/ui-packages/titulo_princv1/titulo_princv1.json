@@ -1,0 +1,171 @@
+{
+  "name": "titulo_princv1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "L5aP67Iy5Nwkspjq71cG5s",
+    "node": "31:122",
+    "version": "4530836970",
+    "component-id": "081ea38a1f913f4943547ee8fb10bd82072d6619"
+  },
+  "default": "TituloPrincv1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "textTittlePrinc"
+      },
+      {
+        "type": "group",
+        "id": "Backv1"
+      },
+      {
+        "type": "group",
+        "id": "🦆 icon \"chevron left\""
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      }
+    ],
+    "modes": {
+      "TituloPrincv1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "textTittlePrinc",
+              "Backv1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "textTittlePrinc",
+            "margin": {
+              "left": "66.0",
+              "top": "7.0",
+              "bottom": "6.413055419921875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "198.94736842105266",
+              "saturation": "0.07450980392156858",
+              "value": "1.0"
+            },
+            "text-content": "Solicitar cotización",
+            "overflow": "visible",
+            "text-size": "25.0",
+            "line-height": "1.1080000305175781",
+            "typeface": "Podkova"
+          },
+          {
+            "id": "Backv1",
+            "padding": {
+              "left": "9.0",
+              "top": "6.0",
+              "right": "9.0",
+              "bottom": "6.0"
+            },
+            "margin": {
+              "right": "253.95916748046875"
+            },
+            "border-radius": "15.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.09803921568627451",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "25.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onBackv1",
+            "arrangement": "row",
+            "children": [
+              "🦆 icon \"chevron left\""
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "216.42857142857144",
+              "saturation": "0.37837837837837845",
+              "value": "0.2901960784313726"
+            }
+          },
+          {
+            "id": "🦆 icon \"chevron left\"",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.413055419921875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.04083251953125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.413055419921875"
+              }
+            },
+            "vector-content": "vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBackv1": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "TituloPrincv1",
+      "size": {
+        "width": 294.0,
+        "height": 41.413055419921875
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
